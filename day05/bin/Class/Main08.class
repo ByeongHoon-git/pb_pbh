@@ -1,0 +1,55 @@
+// Compiled from Main08.java (version 11 : 55.0, super bit)
+public class Class.Main08 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main08();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 21]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Main08
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 5, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new Class.Article [16]
+     3  dup
+     4  iconst_1
+     5  ldc <String "자바연습"> [18]
+     7  ldc <String "자바학생"> [20]
+     9  invokespecial Class.Article(int, java.lang.String, java.lang.String) [22]
+    12  astore_1 [article1]
+    13  aload_1 [article1]
+    14  invokevirtual Class.Article.print() : void [25]
+    17  getstatic java.lang.System.out : java.io.PrintStream [28]
+    20  ldc <String "--------------------"> [34]
+    22  invokevirtual java.io.PrintStream.println(java.lang.String) : void [36]
+    25  new Class.Article [16]
+    28  dup
+    29  iconst_2
+    30  ldc <String "자바는 객체지향 언어이다."> [42]
+    32  ldc <String "자바학생2"> [44]
+    34  invokespecial Class.Article(int, java.lang.String, java.lang.String) [22]
+    37  astore_2 [article2]
+    38  aload_2 [article2]
+    39  invokevirtual Class.Article.print() : void [25]
+    42  return
+      Line numbers:
+        [pc: 0, line: 24]
+        [pc: 7, line: 25]
+        [pc: 9, line: 24]
+        [pc: 13, line: 26]
+        [pc: 17, line: 27]
+        [pc: 25, line: 29]
+        [pc: 30, line: 30]
+        [pc: 34, line: 29]
+        [pc: 38, line: 31]
+        [pc: 42, line: 33]
+      Local variable table:
+        [pc: 0, pc: 43] local: args index: 0 type: java.lang.String[]
+        [pc: 13, pc: 43] local: article1 index: 1 type: Class.Article
+        [pc: 38, pc: 43] local: article2 index: 2 type: Class.Article
+}
