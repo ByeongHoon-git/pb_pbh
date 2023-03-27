@@ -1,0 +1,70 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+class hiding.Student {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  private java.lang.String name;
+  
+  // Field descriptor #8 I
+  private int age;
+  
+  // Method descriptor #10 ()V
+  // Stack: 1, Locals: 1
+  Student();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [12]
+    4  return
+      Line numbers:
+        [pc: 0, line: 11]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Student
+  
+  // Method descriptor #19 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setName(java.lang.String name);
+    0  aload_0 [this]
+    1  aload_1 [name]
+    2  putfield hiding.Student.name : java.lang.String [20]
+    5  return
+      Line numbers:
+        [pc: 0, line: 17]
+        [pc: 5, line: 18]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Student
+        [pc: 0, pc: 6] local: name index: 1 type: java.lang.String
+  
+  // Method descriptor #23 (I)V
+  // Stack: 2, Locals: 2
+  public void setAge(int age);
+    0  aload_0 [this]
+    1  iload_1 [age]
+    2  putfield hiding.Student.age : int [24]
+    5  return
+      Line numbers:
+        [pc: 0, line: 21]
+        [pc: 5, line: 22]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Student
+        [pc: 0, pc: 6] local: age index: 1 type: int
+  
+  // Method descriptor #27 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getName();
+    0  aload_0 [this]
+    1  getfield hiding.Student.name : java.lang.String [20]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 26]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Student
+  
+  // Method descriptor #29 ()I
+  // Stack: 1, Locals: 1
+  public int getAge();
+    0  aload_0 [this]
+    1  getfield hiding.Student.age : int [24]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 30]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Student
+}
