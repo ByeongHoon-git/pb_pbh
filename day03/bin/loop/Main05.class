@@ -1,0 +1,51 @@
+// Compiled from Main05.java (version 11 : 55.0, super bit)
+public class loop.Main05 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main05();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: loop.Main05
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  iconst_0
+     1  istore_1 [result]
+     2  iconst_1
+     3  istore_2 [i]
+     4  goto 22
+     7  iload_2 [i]
+     8  bipush 7
+    10  imul
+    11  istore_1 [result]
+    12  getstatic java.lang.System.out : java.io.PrintStream [16]
+    15  iload_1 [result]
+    16  invokevirtual java.io.PrintStream.println(int) : void [22]
+    19  iinc 2 1 [i]
+    22  iload_2 [i]
+    23  bipush 10
+    25  if_icmplt 7
+    28  return
+      Line numbers:
+        [pc: 0, line: 14]
+        [pc: 2, line: 16]
+        [pc: 4, line: 18]
+        [pc: 7, line: 19]
+        [pc: 12, line: 20]
+        [pc: 19, line: 21]
+        [pc: 22, line: 18]
+        [pc: 28, line: 36]
+      Local variable table:
+        [pc: 0, pc: 29] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 29] local: result index: 1 type: int
+        [pc: 4, pc: 29] local: i index: 2 type: int
+      Stack map table: number of frames 2
+        [pc: 7, append: {int, int}]
+        [pc: 22, same]
+}
