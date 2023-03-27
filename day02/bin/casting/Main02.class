@@ -1,0 +1,100 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class casting.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: casting.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 8
+  public static void main(java.lang.String[] args);
+      0  ldc2_w <Long 100> [16]
+      3  lstore_1 [l]
+      4  lload_1 [l]
+      5  l2i
+      6  istore_3 [i]
+      7  iload_3 [i]
+      8  i2s
+      9  istore 4 [s]
+     11  getstatic java.lang.System.out : java.io.PrintStream [18]
+     14  new java.lang.StringBuilder [24]
+     17  dup
+     18  ldc <String "l : "> [26]
+     20  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+     23  lload_1 [l]
+     24  invokevirtual java.lang.StringBuilder.append(long) : java.lang.StringBuilder [31]
+     27  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+     30  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+     33  getstatic java.lang.System.out : java.io.PrintStream [18]
+     36  new java.lang.StringBuilder [24]
+     39  dup
+     40  ldc <String "i : "> [44]
+     42  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+     45  iload_3 [i]
+     46  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [46]
+     49  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+     52  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+     55  getstatic java.lang.System.out : java.io.PrintStream [18]
+     58  new java.lang.StringBuilder [24]
+     61  dup
+     62  ldc <String "s : "> [49]
+     64  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+     67  iload 4 [s]
+     69  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [46]
+     72  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+     75  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+     78  getstatic java.lang.System.out : java.io.PrintStream [18]
+     81  ldc <String "-------------------------------"> [51]
+     83  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+     86  ldc2_w <Double 3.14> [53]
+     89  dstore 5 [pi]
+     91  dload 5 [pi]
+     93  d2i
+     94  istore 7 [pi2]
+     96  getstatic java.lang.System.out : java.io.PrintStream [18]
+     99  new java.lang.StringBuilder [24]
+    102  dup
+    103  ldc <String "pi : "> [55]
+    105  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+    108  dload 5 [pi]
+    110  invokevirtual java.lang.StringBuilder.append(double) : java.lang.StringBuilder [57]
+    113  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+    116  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    119  getstatic java.lang.System.out : java.io.PrintStream [18]
+    122  new java.lang.StringBuilder [24]
+    125  dup
+    126  ldc <String "pi2 : "> [60]
+    128  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+    131  iload 7 [pi2]
+    133  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [46]
+    136  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+    139  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    142  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 4, line: 7]
+        [pc: 7, line: 8]
+        [pc: 11, line: 10]
+        [pc: 33, line: 11]
+        [pc: 55, line: 12]
+        [pc: 78, line: 14]
+        [pc: 86, line: 16]
+        [pc: 91, line: 21]
+        [pc: 96, line: 23]
+        [pc: 119, line: 24]
+        [pc: 142, line: 26]
+      Local variable table:
+        [pc: 0, pc: 143] local: args index: 0 type: java.lang.String[]
+        [pc: 4, pc: 143] local: l index: 1 type: long
+        [pc: 7, pc: 143] local: i index: 3 type: int
+        [pc: 11, pc: 143] local: s index: 4 type: short
+        [pc: 91, pc: 143] local: pi index: 5 type: double
+        [pc: 96, pc: 143] local: pi2 index: 7 type: int
+}
