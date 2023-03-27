@@ -1,0 +1,72 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class overload.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: overload.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 3, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  new overload.Character [16]
+     3  dup
+     4  invokespecial overload.Character() [18]
+     7  astore_1 [c]
+     8  getstatic java.lang.System.out : java.io.PrintStream [19]
+    11  aload_1 [c]
+    12  invokevirtual overload.Character.toString() : java.lang.String [25]
+    15  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    18  aload_1 [c]
+    19  ldc <String "회사원"> [35]
+    21  invokevirtual overload.Character.setProperty(java.lang.String) : void [37]
+    24  getstatic java.lang.System.out : java.io.PrintStream [19]
+    27  aload_1 [c]
+    28  invokevirtual overload.Character.toString() : java.lang.String [25]
+    31  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    34  aload_1 [c]
+    35  bipush 30
+    37  invokevirtual overload.Character.setProperty(int) : void [40]
+    40  getstatic java.lang.System.out : java.io.PrintStream [19]
+    43  aload_1 [c]
+    44  invokevirtual overload.Character.toString() : java.lang.String [25]
+    47  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    50  aload_1 [c]
+    51  bipush 50
+    53  ldc <String "교수"> [43]
+    55  invokevirtual overload.Character.setProperty(int, java.lang.String) : void [45]
+    58  getstatic java.lang.System.out : java.io.PrintStream [19]
+    61  aload_1 [c]
+    62  invokevirtual overload.Character.toString() : java.lang.String [25]
+    65  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    68  aload_1 [c]
+    69  ldc <String "학생"> [48]
+    71  bipush 20
+    73  invokevirtual overload.Character.setProperty(java.lang.String, int) : void [50]
+    76  getstatic java.lang.System.out : java.io.PrintStream [19]
+    79  aload_1 [c]
+    80  invokevirtual overload.Character.toString() : java.lang.String [25]
+    83  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    86  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 8, line: 7]
+        [pc: 18, line: 9]
+        [pc: 24, line: 10]
+        [pc: 34, line: 12]
+        [pc: 40, line: 13]
+        [pc: 50, line: 15]
+        [pc: 58, line: 16]
+        [pc: 68, line: 18]
+        [pc: 76, line: 19]
+        [pc: 86, line: 20]
+      Local variable table:
+        [pc: 0, pc: 87] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 87] local: c index: 1 type: overload.Character
+}
