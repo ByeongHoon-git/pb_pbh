@@ -1,0 +1,72 @@
+// Compiled from FileArticle.java (version 11 : 55.0, super bit)
+public class Extends.FileArticle extends Extends.Article {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  private java.lang.String filaName;
+  
+  // Method descriptor #8 ()V
+  // Stack: 1, Locals: 1
+  public FileArticle();
+    0  aload_0 [this]
+    1  invokespecial Extends.Article() [10]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.FileArticle
+  
+  // Method descriptor #17 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getFilaName();
+    0  aload_0 [this]
+    1  getfield Extends.FileArticle.filaName : java.lang.String [18]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 8]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.FileArticle
+  
+  // Method descriptor #21 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setFilaName(java.lang.String filaName);
+    0  aload_0 [this]
+    1  aload_1 [filaName]
+    2  putfield Extends.FileArticle.filaName : java.lang.String [18]
+    5  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 5, line: 13]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Extends.FileArticle
+        [pc: 0, pc: 6] local: filaName index: 1 type: java.lang.String
+  
+  // Method descriptor #17 ()Ljava/lang/String;
+  // Stack: 3, Locals: 1
+  public java.lang.String toString();
+     0  new java.lang.StringBuilder [23]
+     3  dup
+     4  ldc <String "자료실[번호 = "> [25]
+     6  invokespecial java.lang.StringBuilder(java.lang.String) [27]
+     9  aload_0 [this]
+    10  invokevirtual Extends.FileArticle.getNum() : int [29]
+    13  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [33]
+    16  ldc <String ", 제목 = "> [37]
+    18  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [39]
+    21  aload_0 [this]
+    22  invokevirtual Extends.FileArticle.getTitle() : java.lang.String [42]
+    25  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [39]
+    28  ldc <String ", 첨부파일 = "> [45]
+    30  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [39]
+    33  aload_0 [this]
+    34  invokevirtual Extends.FileArticle.getFilaName() : java.lang.String [47]
+    37  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [39]
+    40  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [49]
+    43  areturn
+      Line numbers:
+        [pc: 0, line: 16]
+        [pc: 16, line: 17]
+        [pc: 28, line: 18]
+        [pc: 40, line: 16]
+      Local variable table:
+        [pc: 0, pc: 44] local: this index: 0 type: Extends.FileArticle
+}
