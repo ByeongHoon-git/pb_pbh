@@ -1,0 +1,373 @@
+// Compiled from Main05.java (version 11 : 55.0, super bit)
+public class multi.Main05 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main05();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: multi.Main05
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 8
+  public static void main(java.lang.String[] args);
+      0  iconst_2
+      1  istore_1 [i]
+      2  iconst_1
+      3  istore_2 [j]
+      4  goto 46
+      7  iload_1 [i]
+      8  iload_2 [j]
+      9  imul
+     10  istore_3 [k]
+     11  getstatic java.lang.System.out : java.io.PrintStream [16]
+     14  iload_3 [k]
+     15  invokevirtual java.io.PrintStream.println(int) : void [22]
+     18  iinc 2 1 [j]
+     21  iload_2 [j]
+     22  bipush 10
+     24  if_icmplt 7
+     27  iload_1 [i]
+     28  bipush 9
+     30  if_icmpge 41
+     33  getstatic java.lang.System.out : java.io.PrintStream [16]
+     36  ldc <String "---"> [28]
+     38  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+     41  iinc 1 1 [i]
+     44  iconst_1
+     45  istore_2 [j]
+     46  iload_1 [i]
+     47  bipush 9
+     49  if_icmple 21
+     52  getstatic java.lang.System.out : java.io.PrintStream [16]
+     55  ldc <String "-------------------"> [33]
+     57  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+     60  iconst_0
+     61  istore_3 [sum]
+     62  iconst_1
+     63  istore 4 [i1]
+     65  goto 76
+     68  iload_3 [sum]
+     69  iload 4 [i1]
+     71  iadd
+     72  istore_3 [sum]
+     73  iinc 4 1 [i1]
+     76  iload 4 [i1]
+     78  bipush 10
+     80  if_icmple 68
+     83  getstatic java.lang.System.out : java.io.PrintStream [16]
+     86  new java.lang.StringBuilder [35]
+     89  dup
+     90  ldc <String "1~10까지의 홀수의 합"> [37]
+     92  invokespecial java.lang.StringBuilder(java.lang.String) [39]
+     95  iload_3 [sum]
+     96  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [41]
+     99  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [45]
+    102  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    105  getstatic java.lang.System.out : java.io.PrintStream [16]
+    108  ldc <String "-------------------"> [33]
+    110  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    113  iconst_0
+    114  istore 4 [sum2]
+    116  iconst_1
+    117  istore 5 [i2]
+    119  goto 140
+    122  iload 5 [i2]
+    124  iconst_2
+    125  irem
+    126  iconst_1
+    127  if_icmpne 137
+    130  iload 4 [sum2]
+    132  iload 5 [i2]
+    134  iadd
+    135  istore 4 [sum2]
+    137  iinc 5 1 [i2]
+    140  iload 5 [i2]
+    142  bipush 10
+    144  if_icmple 122
+    147  getstatic java.lang.System.out : java.io.PrintStream [16]
+    150  new java.lang.StringBuilder [35]
+    153  dup
+    154  ldc <String "1~10까지의 홀수의 합"> [37]
+    156  invokespecial java.lang.StringBuilder(java.lang.String) [39]
+    159  iload 4 [sum2]
+    161  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [41]
+    164  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [45]
+    167  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    170  getstatic java.lang.System.out : java.io.PrintStream [16]
+    173  ldc <String "-------------------"> [33]
+    175  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    178  iconst_0
+    179  istore 5 [sum3]
+    181  iconst_1
+    182  istore 6 [i2]
+    184  goto 204
+    187  iload 6 [i2]
+    189  iconst_2
+    190  irem
+    191  ifne 201
+    194  iload 5 [sum3]
+    196  iload 6 [i2]
+    198  iadd
+    199  istore 5 [sum3]
+    201  iinc 6 1 [i2]
+    204  iload 6 [i2]
+    206  bipush 10
+    208  if_icmple 187
+    211  getstatic java.lang.System.out : java.io.PrintStream [16]
+    214  new java.lang.StringBuilder [35]
+    217  dup
+    218  ldc <String "1~10까지의 짝수의 합"> [49]
+    220  invokespecial java.lang.StringBuilder(java.lang.String) [39]
+    223  iload 5 [sum3]
+    225  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [41]
+    228  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [45]
+    231  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    234  getstatic java.lang.System.out : java.io.PrintStream [16]
+    237  ldc <String "-------------------"> [33]
+    239  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    242  iconst_0
+    243  istore 6 [i2]
+    245  goto 283
+    248  iconst_0
+    249  istore 7 [j2]
+    251  goto 265
+    254  getstatic java.lang.System.out : java.io.PrintStream [16]
+    257  ldc <String "★"> [51]
+    259  invokevirtual java.io.PrintStream.print(java.lang.String) : void [53]
+    262  iinc 7 1 [j2]
+    265  iload 7 [j2]
+    267  bipush 7
+    269  if_icmple 254
+    272  getstatic java.lang.System.out : java.io.PrintStream [16]
+    275  ldc <String ""> [56]
+    277  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    280  iinc 6 1 [i2]
+    283  iload 6 [i2]
+    285  bipush 7
+    287  if_icmple 248
+    290  getstatic java.lang.System.out : java.io.PrintStream [16]
+    293  ldc <String "--------------------------"> [58]
+    295  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    298  iconst_0
+    299  istore 6 [i2]
+    301  goto 340
+    304  iload 6 [i2]
+    306  istore 7 [j2]
+    308  goto 322
+    311  getstatic java.lang.System.out : java.io.PrintStream [16]
+    314  ldc <String "★"> [51]
+    316  invokevirtual java.io.PrintStream.print(java.lang.String) : void [53]
+    319  iinc 7 1 [j2]
+    322  iload 7 [j2]
+    324  bipush 7
+    326  if_icmple 311
+    329  getstatic java.lang.System.out : java.io.PrintStream [16]
+    332  ldc <String ""> [56]
+    334  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    337  iinc 6 1 [i2]
+    340  iload 6 [i2]
+    342  bipush 7
+    344  if_icmple 304
+    347  getstatic java.lang.System.out : java.io.PrintStream [16]
+    350  ldc <String "--------------------------"> [58]
+    352  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    355  bipush 7
+    357  istore 6 [i2]
+    359  goto 398
+    362  iload 6 [i2]
+    364  istore 7 [j2]
+    366  goto 380
+    369  getstatic java.lang.System.out : java.io.PrintStream [16]
+    372  ldc <String "★"> [51]
+    374  invokevirtual java.io.PrintStream.print(java.lang.String) : void [53]
+    377  iinc 7 1 [j2]
+    380  iload 7 [j2]
+    382  bipush 7
+    384  if_icmple 369
+    387  getstatic java.lang.System.out : java.io.PrintStream [16]
+    390  ldc <String ""> [56]
+    392  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    395  iinc 6 -1 [i2]
+    398  iload 6 [i2]
+    400  ifge 362
+    403  getstatic java.lang.System.out : java.io.PrintStream [16]
+    406  ldc <String "--------------------------"> [58]
+    408  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    411  iconst_0
+    412  istore 6 [treeHit]
+    414  iinc 6 1 [treeHit]
+    417  getstatic java.lang.System.out : java.io.PrintStream [16]
+    420  new java.lang.StringBuilder [35]
+    423  dup
+    424  ldc <String "나무를 "> [60]
+    426  invokespecial java.lang.StringBuilder(java.lang.String) [39]
+    429  iload 6 [treeHit]
+    431  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [41]
+    434  ldc <String "번 찍었습니다."> [62]
+    436  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [64]
+    439  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [45]
+    442  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    445  iload 6 [treeHit]
+    447  bipush 10
+    449  if_icmplt 455
+    452  goto 466
+    455  getstatic java.lang.System.out : java.io.PrintStream [16]
+    458  ldc <String "나무가 넘어갑니다."> [67]
+    460  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    463  goto 414
+    466  getstatic java.lang.System.out : java.io.PrintStream [16]
+    469  ldc <String "-------------------------"> [69]
+    471  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    474  iconst_0
+    475  istore 7 [treeHit2]
+    477  goto 526
+    480  iinc 7 1 [treeHit2]
+    483  getstatic java.lang.System.out : java.io.PrintStream [16]
+    486  new java.lang.StringBuilder [35]
+    489  dup
+    490  ldc <String "나무를 "> [60]
+    492  invokespecial java.lang.StringBuilder(java.lang.String) [39]
+    495  iload 7 [treeHit2]
+    497  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [41]
+    500  ldc <String "번 찍었습니다."> [62]
+    502  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [64]
+    505  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [45]
+    508  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    511  iload 7 [treeHit2]
+    513  bipush 10
+    515  if_icmpne 526
+    518  getstatic java.lang.System.out : java.io.PrintStream [16]
+    521  ldc <String "나무가 넘어갑니다."> [67]
+    523  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    526  iload 7 [treeHit2]
+    528  bipush 10
+    530  if_icmplt 480
+    533  return
+      Line numbers:
+        [pc: 0, line: 9]
+        [pc: 2, line: 10]
+        [pc: 4, line: 12]
+        [pc: 7, line: 14]
+        [pc: 11, line: 15]
+        [pc: 18, line: 16]
+        [pc: 21, line: 13]
+        [pc: 27, line: 19]
+        [pc: 33, line: 20]
+        [pc: 41, line: 22]
+        [pc: 44, line: 23]
+        [pc: 46, line: 12]
+        [pc: 52, line: 27]
+        [pc: 60, line: 30]
+        [pc: 62, line: 32]
+        [pc: 68, line: 33]
+        [pc: 73, line: 32]
+        [pc: 83, line: 34]
+        [pc: 105, line: 35]
+        [pc: 113, line: 39]
+        [pc: 116, line: 40]
+        [pc: 122, line: 41]
+        [pc: 130, line: 42]
+        [pc: 137, line: 40]
+        [pc: 147, line: 45]
+        [pc: 170, line: 46]
+        [pc: 178, line: 51]
+        [pc: 181, line: 52]
+        [pc: 187, line: 53]
+        [pc: 194, line: 54]
+        [pc: 201, line: 52]
+        [pc: 211, line: 57]
+        [pc: 234, line: 58]
+        [pc: 242, line: 75]
+        [pc: 248, line: 76]
+        [pc: 254, line: 77]
+        [pc: 262, line: 76]
+        [pc: 272, line: 79]
+        [pc: 280, line: 75]
+        [pc: 290, line: 81]
+        [pc: 298, line: 95]
+        [pc: 304, line: 96]
+        [pc: 311, line: 97]
+        [pc: 319, line: 96]
+        [pc: 329, line: 99]
+        [pc: 337, line: 95]
+        [pc: 347, line: 101]
+        [pc: 355, line: 116]
+        [pc: 362, line: 117]
+        [pc: 369, line: 118]
+        [pc: 377, line: 117]
+        [pc: 387, line: 120]
+        [pc: 395, line: 116]
+        [pc: 403, line: 122]
+        [pc: 411, line: 138]
+        [pc: 414, line: 140]
+        [pc: 417, line: 141]
+        [pc: 445, line: 142]
+        [pc: 452, line: 143]
+        [pc: 455, line: 144]
+        [pc: 463, line: 139]
+        [pc: 466, line: 147]
+        [pc: 474, line: 149]
+        [pc: 477, line: 150]
+        [pc: 480, line: 151]
+        [pc: 483, line: 152]
+        [pc: 500, line: 153]
+        [pc: 508, line: 152]
+        [pc: 511, line: 154]
+        [pc: 518, line: 155]
+        [pc: 526, line: 150]
+        [pc: 533, line: 162]
+      Local variable table:
+        [pc: 0, pc: 534] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 534] local: i index: 1 type: int
+        [pc: 4, pc: 534] local: j index: 2 type: int
+        [pc: 11, pc: 21] local: k index: 3 type: int
+        [pc: 62, pc: 534] local: sum index: 3 type: int
+        [pc: 65, pc: 83] local: i1 index: 4 type: int
+        [pc: 116, pc: 534] local: sum2 index: 4 type: int
+        [pc: 119, pc: 147] local: i2 index: 5 type: int
+        [pc: 181, pc: 534] local: sum3 index: 5 type: int
+        [pc: 184, pc: 211] local: i2 index: 6 type: int
+        [pc: 245, pc: 290] local: i2 index: 6 type: int
+        [pc: 251, pc: 272] local: j2 index: 7 type: int
+        [pc: 301, pc: 347] local: i2 index: 6 type: int
+        [pc: 308, pc: 329] local: j2 index: 7 type: int
+        [pc: 359, pc: 403] local: i2 index: 6 type: int
+        [pc: 366, pc: 387] local: j2 index: 7 type: int
+        [pc: 414, pc: 534] local: treeHit index: 6 type: int
+        [pc: 477, pc: 534] local: treeHit2 index: 7 type: int
+      Stack map table: number of frames 29
+        [pc: 7, append: {int, int}]
+        [pc: 21, same]
+        [pc: 41, same]
+        [pc: 46, same]
+        [pc: 68, append: {int, int}]
+        [pc: 76, same]
+        [pc: 122, append: {int}]
+        [pc: 137, same]
+        [pc: 140, same]
+        [pc: 187, append: {int}]
+        [pc: 201, same]
+        [pc: 204, same]
+        [pc: 248, same]
+        [pc: 254, append: {int}]
+        [pc: 265, same]
+        [pc: 283, chop 1 local(s)]
+        [pc: 304, same]
+        [pc: 311, append: {int}]
+        [pc: 322, same]
+        [pc: 340, chop 1 local(s)]
+        [pc: 362, same]
+        [pc: 369, append: {int}]
+        [pc: 380, same]
+        [pc: 398, chop 1 local(s)]
+        [pc: 414, same]
+        [pc: 455, same]
+        [pc: 466, same]
+        [pc: 480, append: {int}]
+        [pc: 526, same]
+}
