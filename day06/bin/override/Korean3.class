@@ -1,0 +1,17 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+class override.Korean3 extends override.Hello3 {
+  
+  // Method descriptor #6 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public Korean3(java.lang.String name);
+    0  aload_0 [this]
+    1  aload_1 [name]
+    2  invokespecial override.Hello3(java.lang.String) [8]
+    5  return
+      Line numbers:
+        [pc: 0, line: 15]
+        [pc: 5, line: 16]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: override.Korean3
+        [pc: 0, pc: 6] local: name index: 1 type: java.lang.String
+}
