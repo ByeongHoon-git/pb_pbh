@@ -1,0 +1,160 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class array.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: array.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 6
+  public static void main(java.lang.String[] args);
+      0  iconst_3
+      1  iconst_3
+      2  multianewarray int[][] [16]
+      6  astore_1 [grade]
+      7  aload_1 [grade]
+      8  iconst_0
+      9  aaload
+     10  iconst_0
+     11  bipush 75
+     13  iastore
+     14  aload_1 [grade]
+     15  iconst_0
+     16  aaload
+     17  iconst_1
+     18  bipush 82
+     20  iastore
+     21  aload_1 [grade]
+     22  iconst_0
+     23  aaload
+     24  iconst_2
+     25  bipush 91
+     27  iastore
+     28  aload_1 [grade]
+     29  iconst_1
+     30  aaload
+     31  iconst_0
+     32  bipush 88
+     34  iastore
+     35  aload_1 [grade]
+     36  iconst_1
+     37  aaload
+     38  iconst_1
+     39  bipush 64
+     41  iastore
+     42  aload_1 [grade]
+     43  iconst_1
+     44  aaload
+     45  iconst_2
+     46  bipush 50
+     48  iastore
+     49  aload_1 [grade]
+     50  iconst_2
+     51  aaload
+     52  iconst_0
+     53  bipush 100
+     55  iastore
+     56  aload_1 [grade]
+     57  iconst_2
+     58  aaload
+     59  iconst_1
+     60  bipush 100
+     62  iastore
+     63  aload_1 [grade]
+     64  iconst_2
+     65  aaload
+     66  iconst_2
+     67  bipush 90
+     69  iastore
+     70  iconst_0
+     71  istore_2 [i]
+     72  goto 150
+     75  iconst_0
+     76  istore_3 [sum]
+     77  iconst_0
+     78  istore 4 [avg]
+     80  iconst_0
+     81  istore 5 [j]
+     83  goto 98
+     86  iload_3 [sum]
+     87  aload_1 [grade]
+     88  iload_2 [i]
+     89  aaload
+     90  iload 5 [j]
+     92  iaload
+     93  iadd
+     94  istore_3 [sum]
+     95  iinc 5 1 [j]
+     98  iload 5 [j]
+    100  aload_1 [grade]
+    101  iload_2 [i]
+    102  aaload
+    103  arraylength
+    104  if_icmplt 86
+    107  iload_3 [sum]
+    108  aload_1 [grade]
+    109  iload_2 [i]
+    110  aaload
+    111  arraylength
+    112  idiv
+    113  istore 4 [avg]
+    115  getstatic java.lang.System.out : java.io.PrintStream [18]
+    118  new java.lang.StringBuilder [24]
+    121  dup
+    122  ldc <String "총점 = "> [26]
+    124  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+    127  iload_3 [sum]
+    128  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [31]
+    131  ldc <String ", 평균 = "> [35]
+    133  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [37]
+    136  iload 4 [avg]
+    138  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [31]
+    141  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    144  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    147  iinc 2 1 [i]
+    150  iload_2 [i]
+    151  aload_1 [grade]
+    152  arraylength
+    153  if_icmplt 75
+    156  return
+      Line numbers:
+        [pc: 0, line: 9]
+        [pc: 7, line: 12]
+        [pc: 14, line: 13]
+        [pc: 21, line: 14]
+        [pc: 28, line: 19]
+        [pc: 35, line: 20]
+        [pc: 42, line: 21]
+        [pc: 49, line: 25]
+        [pc: 56, line: 26]
+        [pc: 63, line: 27]
+        [pc: 70, line: 36]
+        [pc: 75, line: 38]
+        [pc: 77, line: 39]
+        [pc: 80, line: 41]
+        [pc: 86, line: 44]
+        [pc: 95, line: 41]
+        [pc: 107, line: 48]
+        [pc: 115, line: 49]
+        [pc: 147, line: 36]
+        [pc: 156, line: 64]
+      Local variable table:
+        [pc: 0, pc: 157] local: args index: 0 type: java.lang.String[]
+        [pc: 7, pc: 157] local: grade index: 1 type: int[][]
+        [pc: 72, pc: 156] local: i index: 2 type: int
+        [pc: 77, pc: 147] local: sum index: 3 type: int
+        [pc: 80, pc: 147] local: avg index: 4 type: int
+        [pc: 83, pc: 107] local: j index: 5 type: int
+      Stack map table: number of frames 4
+        [pc: 75, append: {int[][], int}]
+        [pc: 86, append: {int, int, int}]
+        [pc: 98, same]
+        [pc: 150, chop 3 local(s)]
+}
