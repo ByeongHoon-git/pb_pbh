@@ -1,0 +1,143 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class operator.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: operator.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 11
+  public static void main(java.lang.String[] args);
+      0  bipush 12
+      2  istore_1 [num1]
+      3  bipush 8
+      5  istore_2 [num2]
+      6  iload_1 [num1]
+      7  iload_2 [num2]
+      8  iadd
+      9  istore_3 [result1]
+     10  iload_1 [num1]
+     11  iload_2 [num2]
+     12  isub
+     13  istore 4 [result2]
+     15  iload_1 [num1]
+     16  iload_2 [num2]
+     17  imul
+     18  istore 5 [result3]
+     20  iload_1 [num1]
+     21  iload_2 [num2]
+     22  idiv
+     23  istore 6 [result4]
+     25  iload_1 [num1]
+     26  iload_2 [num2]
+     27  irem
+     28  istore 7 [result5]
+     30  getstatic java.lang.System.out : java.io.PrintStream [16]
+     33  ldc <String "사칙연산"> [22]
+     35  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     38  getstatic java.lang.System.out : java.io.PrintStream [16]
+     41  new java.lang.StringBuilder [30]
+     44  dup
+     45  ldc <String "12 + 8 = "> [32]
+     47  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     50  iload_3 [result1]
+     51  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     54  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     57  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     60  getstatic java.lang.System.out : java.io.PrintStream [16]
+     63  new java.lang.StringBuilder [30]
+     66  dup
+     67  ldc <String "12 - 8 = "> [44]
+     69  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     72  iload 4 [result2]
+     74  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     77  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     80  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     83  getstatic java.lang.System.out : java.io.PrintStream [16]
+     86  new java.lang.StringBuilder [30]
+     89  dup
+     90  ldc <String "12 * 8 = "> [46]
+     92  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     95  iload 5 [result3]
+     97  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    100  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    103  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    106  getstatic java.lang.System.out : java.io.PrintStream [16]
+    109  new java.lang.StringBuilder [30]
+    112  dup
+    113  ldc <String "12 / 8 = "> [48]
+    115  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+    118  iload 6 [result4]
+    120  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    123  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    126  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    129  getstatic java.lang.System.out : java.io.PrintStream [16]
+    132  new java.lang.StringBuilder [30]
+    135  dup
+    136  ldc <String "12 % 8 = "> [50]
+    138  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+    141  iload 7 [result5]
+    143  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    146  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    149  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    152  getstatic java.lang.System.out : java.io.PrintStream [16]
+    155  ldc <String "----------------------------"> [52]
+    157  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    160  bipush 100
+    162  istore 8 [num]
+    164  iconst_0
+    165  istore 9 [zero]
+    167  iload 8 [num]
+    169  iload 9 [zero]
+    171  idiv
+    172  istore 10 [result6]
+    174  getstatic java.lang.System.out : java.io.PrintStream [16]
+    177  new java.lang.StringBuilder [30]
+    180  dup
+    181  ldc <String "100 / 0 = "> [54]
+    183  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+    186  iload 10 [result6]
+    188  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    191  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    194  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    197  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 7]
+        [pc: 6, line: 10]
+        [pc: 10, line: 13]
+        [pc: 15, line: 16]
+        [pc: 20, line: 19]
+        [pc: 25, line: 22]
+        [pc: 30, line: 25]
+        [pc: 38, line: 26]
+        [pc: 60, line: 27]
+        [pc: 83, line: 28]
+        [pc: 106, line: 29]
+        [pc: 129, line: 30]
+        [pc: 152, line: 32]
+        [pc: 160, line: 35]
+        [pc: 164, line: 36]
+        [pc: 167, line: 37]
+        [pc: 174, line: 40]
+        [pc: 197, line: 42]
+      Local variable table:
+        [pc: 0, pc: 198] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 198] local: num1 index: 1 type: int
+        [pc: 6, pc: 198] local: num2 index: 2 type: int
+        [pc: 10, pc: 198] local: result1 index: 3 type: int
+        [pc: 15, pc: 198] local: result2 index: 4 type: int
+        [pc: 20, pc: 198] local: result3 index: 5 type: int
+        [pc: 25, pc: 198] local: result4 index: 6 type: int
+        [pc: 30, pc: 198] local: result5 index: 7 type: int
+        [pc: 164, pc: 198] local: num index: 8 type: int
+        [pc: 167, pc: 198] local: zero index: 9 type: int
+        [pc: 174, pc: 198] local: result6 index: 10 type: int
+}
