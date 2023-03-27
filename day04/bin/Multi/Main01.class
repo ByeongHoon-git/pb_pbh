@@ -1,0 +1,56 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class multi.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: multi.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  bipush 100
+     2  istore_1 [target]
+     3  iload_1 [target]
+     4  bipush 100
+     6  if_icmpne 24
+     9  iload_1 [target]
+    10  bipush 100
+    12  iadd
+    13  istore_2 [num]
+    14  getstatic java.lang.System.out : java.io.PrintStream [16]
+    17  iload_2 [num]
+    18  invokevirtual java.io.PrintStream.println(int) : void [22]
+    21  goto 36
+    24  iload_1 [target]
+    25  bipush 100
+    27  isub
+    28  istore_2 [num]
+    29  getstatic java.lang.System.out : java.io.PrintStream [16]
+    32  iload_2 [num]
+    33  invokevirtual java.io.PrintStream.println(int) : void [22]
+    36  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 7]
+        [pc: 9, line: 8]
+        [pc: 14, line: 9]
+        [pc: 21, line: 10]
+        [pc: 24, line: 11]
+        [pc: 29, line: 12]
+        [pc: 36, line: 25]
+      Local variable table:
+        [pc: 0, pc: 37] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 37] local: target index: 1 type: int
+        [pc: 14, pc: 21] local: num index: 2 type: int
+        [pc: 29, pc: 36] local: num index: 2 type: int
+      Stack map table: number of frames 2
+        [pc: 24, append: {int}]
+        [pc: 36, same]
+}
