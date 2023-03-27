@@ -1,0 +1,231 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class array.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: array.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 8
+  public static void main(java.lang.String[] args);
+      0  iconst_3
+      1  newarray int [10]
+      3  astore_1 [dooly]
+      4  aload_1 [dooly]
+      5  iconst_0
+      6  bipush 78
+      8  iastore
+      9  aload_1 [dooly]
+     10  iconst_1
+     11  bipush 82
+     13  iastore
+     14  aload_1 [dooly]
+     15  iconst_2
+     16  bipush 91
+     18  iastore
+     19  iconst_3
+     20  newarray int [10]
+     22  astore_2 [douneo]
+     23  aload_2 [douneo]
+     24  iconst_0
+     25  bipush 88
+     27  iastore
+     28  aload_2 [douneo]
+     29  iconst_1
+     30  bipush 64
+     32  iastore
+     33  aload_2 [douneo]
+     34  iconst_2
+     35  bipush 50
+     37  iastore
+     38  iconst_3
+     39  newarray int [10]
+     41  dup
+     42  iconst_0
+     43  bipush 100
+     45  iastore
+     46  dup
+     47  iconst_1
+     48  bipush 100
+     50  iastore
+     51  dup
+     52  iconst_2
+     53  bipush 90
+     55  iastore
+     56  astore_3 [ddochy]
+     57  iconst_0
+     58  istore 4 [sum1]
+     60  iconst_0
+     61  istore 5 [sum2]
+     63  iconst_0
+     64  istore 6 [sum3]
+     66  getstatic java.lang.System.out : java.io.PrintStream [16]
+     69  new java.lang.StringBuilder [22]
+     72  dup
+     73  ldc <String "둘리 배열 길이 : "> [24]
+     75  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+     78  aload_1 [dooly]
+     79  arraylength
+     80  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+     83  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+     86  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+     89  iconst_0
+     90  istore 7 [i]
+     92  goto 107
+     95  iload 4 [sum1]
+     97  aload_1 [dooly]
+     98  iload 7 [i]
+    100  iaload
+    101  iadd
+    102  istore 4 [sum1]
+    104  iinc 7 1 [i]
+    107  iload 7 [i]
+    109  aload_1 [dooly]
+    110  arraylength
+    111  if_icmplt 95
+    114  getstatic java.lang.System.out : java.io.PrintStream [16]
+    117  new java.lang.StringBuilder [22]
+    120  dup
+    121  ldc <String "둘리 총합 : "> [42]
+    123  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    126  iload 4 [sum1]
+    128  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    131  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    134  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    137  getstatic java.lang.System.out : java.io.PrintStream [16]
+    140  new java.lang.StringBuilder [22]
+    143  dup
+    144  ldc <String "둘리 평균 : "> [44]
+    146  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    149  iload 4 [sum1]
+    151  aload_1 [dooly]
+    152  arraylength
+    153  idiv
+    154  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    157  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    160  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    163  iconst_0
+    164  istore 7 [i]
+    166  goto 181
+    169  iload 5 [sum2]
+    171  aload_2 [douneo]
+    172  iload 7 [i]
+    174  iaload
+    175  iadd
+    176  istore 5 [sum2]
+    178  iinc 7 1 [i]
+    181  iload 7 [i]
+    183  aload_2 [douneo]
+    184  arraylength
+    185  if_icmplt 169
+    188  getstatic java.lang.System.out : java.io.PrintStream [16]
+    191  new java.lang.StringBuilder [22]
+    194  dup
+    195  ldc <String "도우너 총합 : "> [46]
+    197  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    200  iload 5 [sum2]
+    202  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    205  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    208  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    211  getstatic java.lang.System.out : java.io.PrintStream [16]
+    214  new java.lang.StringBuilder [22]
+    217  dup
+    218  ldc <String "도우너 평균 : "> [48]
+    220  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    223  iload 5 [sum2]
+    225  aload_2 [douneo]
+    226  arraylength
+    227  idiv
+    228  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    231  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    234  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    237  iconst_0
+    238  istore 7 [i]
+    240  goto 255
+    243  iload 6 [sum3]
+    245  aload_3 [ddochy]
+    246  iload 7 [i]
+    248  iaload
+    249  iadd
+    250  istore 6 [sum3]
+    252  iinc 7 1 [i]
+    255  iload 7 [i]
+    257  aload_3 [ddochy]
+    258  arraylength
+    259  if_icmplt 243
+    262  getstatic java.lang.System.out : java.io.PrintStream [16]
+    265  new java.lang.StringBuilder [22]
+    268  dup
+    269  ldc <String "또치 총합 : "> [50]
+    271  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    274  iload 6 [sum3]
+    276  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    279  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    282  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    285  getstatic java.lang.System.out : java.io.PrintStream [16]
+    288  new java.lang.StringBuilder [22]
+    291  dup
+    292  ldc <String "또치 평균 : "> [52]
+    294  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    297  iload 6 [sum3]
+    299  aload_3 [ddochy]
+    300  arraylength
+    301  idiv
+    302  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    305  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    308  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    311  return
+      Line numbers:
+        [pc: 0, line: 10]
+        [pc: 4, line: 12]
+        [pc: 9, line: 13]
+        [pc: 14, line: 14]
+        [pc: 19, line: 16]
+        [pc: 23, line: 17]
+        [pc: 28, line: 18]
+        [pc: 33, line: 19]
+        [pc: 38, line: 21]
+        [pc: 57, line: 27]
+        [pc: 66, line: 31]
+        [pc: 89, line: 32]
+        [pc: 95, line: 33]
+        [pc: 104, line: 32]
+        [pc: 114, line: 35]
+        [pc: 137, line: 36]
+        [pc: 163, line: 42]
+        [pc: 169, line: 43]
+        [pc: 178, line: 42]
+        [pc: 188, line: 45]
+        [pc: 211, line: 46]
+        [pc: 237, line: 50]
+        [pc: 243, line: 51]
+        [pc: 252, line: 50]
+        [pc: 262, line: 53]
+        [pc: 285, line: 54]
+        [pc: 311, line: 62]
+      Local variable table:
+        [pc: 0, pc: 312] local: args index: 0 type: java.lang.String[]
+        [pc: 4, pc: 312] local: dooly index: 1 type: int[]
+        [pc: 23, pc: 312] local: douneo index: 2 type: int[]
+        [pc: 57, pc: 312] local: ddochy index: 3 type: int[]
+        [pc: 60, pc: 312] local: sum1 index: 4 type: int
+        [pc: 63, pc: 312] local: sum2 index: 5 type: int
+        [pc: 66, pc: 312] local: sum3 index: 6 type: int
+        [pc: 92, pc: 114] local: i index: 7 type: int
+        [pc: 166, pc: 188] local: i index: 7 type: int
+        [pc: 240, pc: 262] local: i index: 7 type: int
+      Stack map table: number of frames 6
+        [pc: 95, full, stack: {}, locals: {java.lang.String[], int[], int[], int[], int, int, int, int}]
+        [pc: 107, same]
+        [pc: 169, same]
+        [pc: 181, same]
+        [pc: 243, same]
+        [pc: 255, same]
+}
