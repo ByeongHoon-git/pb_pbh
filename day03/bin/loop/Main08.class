@@ -1,0 +1,50 @@
+// Compiled from Main08.java (version 11 : 55.0, super bit)
+public class loop.Main08 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main08();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: loop.Main08
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  bipush 110
+     2  istore_1 [max]
+     3  goto 14
+     6  getstatic java.lang.System.out : java.io.PrintStream [16]
+     9  ldc <String "while문 실행"> [22]
+    11  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    14  iload_1 [max]
+    15  bipush 100
+    17  if_icmpgt 6
+    20  getstatic java.lang.System.out : java.io.PrintStream [16]
+    23  ldc <String "do~while문 실행"> [30]
+    25  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    28  iload_1 [max]
+    29  bipush 100
+    31  if_icmpgt 20
+    34  return
+      Line numbers:
+        [pc: 0, line: 7]
+        [pc: 3, line: 9]
+        [pc: 6, line: 10]
+        [pc: 14, line: 9]
+        [pc: 20, line: 14]
+        [pc: 28, line: 15]
+        [pc: 31, line: 13]
+        [pc: 34, line: 24]
+      Local variable table:
+        [pc: 0, pc: 35] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 35] local: max index: 1 type: int
+      Stack map table: number of frames 3
+        [pc: 6, append: {int}]
+        [pc: 14, same]
+        [pc: 20, same]
+}
