@@ -1,0 +1,65 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+public class casting.Main03 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main03();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: casting.Main03
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 7
+  public static void main(java.lang.String[] args);
+     0  ldc2_w <Double 10.5> [16]
+     3  dstore_1 [a]
+     4  ldc <Float 20.5> [18]
+     6  fstore_3 [b]
+     7  dload_1 [a]
+     8  fload_3 [b]
+     9  f2d
+    10  dadd
+    11  dstore 4 [d]
+    13  getstatic java.lang.System.out : java.io.PrintStream [19]
+    16  new java.lang.StringBuilder [25]
+    19  dup
+    20  ldc <String "d : "> [27]
+    22  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+    25  dload 4 [d]
+    27  invokevirtual java.lang.StringBuilder.append(double) : java.lang.StringBuilder [32]
+    30  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [36]
+    33  invokevirtual java.io.PrintStream.println(java.lang.String) : void [40]
+    36  dload_1 [a]
+    37  d2f
+    38  fload_3 [b]
+    39  fadd
+    40  fstore 6 [f]
+    42  getstatic java.lang.System.out : java.io.PrintStream [19]
+    45  new java.lang.StringBuilder [25]
+    48  dup
+    49  ldc <String "f : "> [45]
+    51  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+    54  fload 6 [f]
+    56  invokevirtual java.lang.StringBuilder.append(float) : java.lang.StringBuilder [47]
+    59  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [36]
+    62  invokevirtual java.io.PrintStream.println(java.lang.String) : void [40]
+    65  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 4, line: 7]
+        [pc: 7, line: 18]
+        [pc: 13, line: 19]
+        [pc: 36, line: 21]
+        [pc: 42, line: 22]
+        [pc: 65, line: 23]
+      Local variable table:
+        [pc: 0, pc: 66] local: args index: 0 type: java.lang.String[]
+        [pc: 4, pc: 66] local: a index: 1 type: double
+        [pc: 7, pc: 66] local: b index: 3 type: float
+        [pc: 13, pc: 66] local: d index: 4 type: double
+        [pc: 42, pc: 66] local: f index: 6 type: float
+}
