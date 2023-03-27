@@ -1,0 +1,14 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+class override.English extends override.Hello {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  English();
+    0  aload_0 [this]
+    1  invokespecial override.Hello() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 9]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: override.English
+}
