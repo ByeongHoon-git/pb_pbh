@@ -1,0 +1,34 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+class overload.Hello {
+  
+  // Method descriptor #6 ()V
+  // Stack: 2, Locals: 1
+  public Hello();
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [8]
+     4  getstatic java.lang.System.out : java.io.PrintStream [10]
+     7  ldc <String "hello"> [16]
+     9  invokevirtual java.io.PrintStream.println(java.lang.String) : void [18]
+    12  return
+      Line numbers:
+        [pc: 0, line: 4]
+      Local variable table:
+        [pc: 0, pc: 13] local: this index: 0 type: overload.Hello
+  
+  // Method descriptor #23 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public Hello(java.lang.String msg);
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [8]
+     4  getstatic java.lang.System.out : java.io.PrintStream [10]
+     7  aload_1 [msg]
+     8  invokevirtual java.io.PrintStream.println(java.lang.String) : void [18]
+    11  return
+      Line numbers:
+        [pc: 0, line: 5]
+        [pc: 4, line: 6]
+        [pc: 11, line: 7]
+      Local variable table:
+        [pc: 0, pc: 12] local: this index: 0 type: overload.Hello
+        [pc: 0, pc: 12] local: msg index: 1 type: java.lang.String
+}
