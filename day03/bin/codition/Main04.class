@@ -1,0 +1,73 @@
+// Compiled from Main04.java (version 11 : 55.0, super bit)
+public class codition.Main04 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main04();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: codition.Main04
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  bipush 100
+     2  istore_1 [point]
+     3  iload_1 [point]
+     4  bipush 90
+     6  if_icmple 26
+     9  iload_1 [point]
+    10  bipush 100
+    12  if_icmpgt 26
+    15  getstatic java.lang.System.out : java.io.PrintStream [16]
+    18  ldc <String "A"> [22]
+    20  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    23  goto 80
+    26  iload_1 [point]
+    27  bipush 80
+    29  if_icmple 49
+    32  iload_1 [point]
+    33  bipush 90
+    35  if_icmpgt 49
+    38  getstatic java.lang.System.out : java.io.PrintStream [16]
+    41  ldc <String "B"> [30]
+    43  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    46  goto 80
+    49  iload_1 [point]
+    50  bipush 70
+    52  if_icmple 72
+    55  iload_1 [point]
+    56  bipush 80
+    58  if_icmpgt 72
+    61  getstatic java.lang.System.out : java.io.PrintStream [16]
+    64  ldc <String "c"> [32]
+    66  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    69  goto 80
+    72  getstatic java.lang.System.out : java.io.PrintStream [16]
+    75  ldc <String "F"> [34]
+    77  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    80  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 16]
+        [pc: 15, line: 17]
+        [pc: 23, line: 18]
+        [pc: 38, line: 19]
+        [pc: 46, line: 20]
+        [pc: 61, line: 21]
+        [pc: 69, line: 22]
+        [pc: 72, line: 23]
+        [pc: 80, line: 42]
+      Local variable table:
+        [pc: 0, pc: 81] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 81] local: point index: 1 type: int
+      Stack map table: number of frames 4
+        [pc: 26, append: {int}]
+        [pc: 49, same]
+        [pc: 72, same]
+        [pc: 80, same]
+}
