@@ -1,0 +1,99 @@
+// Compiled from Main05.java (version 11 : 55.0, super bit)
+public class Class.Main05 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main05();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 34]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Main05
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 5, Locals: 5
+  public static void main(java.lang.String[] args);
+      0  new Class.Result [16]
+      3  dup
+      4  invokespecial Class.Result() [18]
+      7  astore_1 [c]
+      8  getstatic java.lang.System.out : java.io.PrintStream [19]
+     11  new java.lang.StringBuilder [25]
+     14  dup
+     15  ldc <String "100 + 5 : "> [27]
+     17  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     20  aload_1 [c]
+     21  bipush 100
+     23  iconst_5
+     24  invokevirtual Class.Result.plus(int, int) : int [32]
+     27  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     30  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     33  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+     36  new Class.Result [16]
+     39  dup
+     40  invokespecial Class.Result() [18]
+     43  astore_2 [c2]
+     44  getstatic java.lang.System.out : java.io.PrintStream [19]
+     47  new java.lang.StringBuilder [25]
+     50  dup
+     51  ldc <String "100 - 5 : "> [49]
+     53  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     56  aload_2 [c2]
+     57  bipush 100
+     59  iconst_5
+     60  invokevirtual Class.Result.minus(int, int) : int [51]
+     63  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     66  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     69  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+     72  new Class.Result [16]
+     75  dup
+     76  invokespecial Class.Result() [18]
+     79  astore_3 [c3]
+     80  getstatic java.lang.System.out : java.io.PrintStream [19]
+     83  new java.lang.StringBuilder [25]
+     86  dup
+     87  ldc <String "100 * 5 : "> [54]
+     89  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     92  aload_3 [c3]
+     93  bipush 100
+     95  iconst_5
+     96  invokevirtual Class.Result.mucous(int, int) : int [56]
+     99  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    102  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    105  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    108  new Class.Result [16]
+    111  dup
+    112  invokespecial Class.Result() [18]
+    115  astore 4 [c4]
+    117  getstatic java.lang.System.out : java.io.PrintStream [19]
+    120  new java.lang.StringBuilder [25]
+    123  dup
+    124  ldc <String "100 / 5 : "> [59]
+    126  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+    129  aload 4 [c4]
+    131  bipush 100
+    133  iconst_5
+    134  invokevirtual Class.Result.division(int, int) : int [61]
+    137  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    140  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    143  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    146  return
+      Line numbers:
+        [pc: 0, line: 38]
+        [pc: 8, line: 39]
+        [pc: 36, line: 41]
+        [pc: 44, line: 42]
+        [pc: 72, line: 44]
+        [pc: 80, line: 45]
+        [pc: 108, line: 47]
+        [pc: 117, line: 48]
+        [pc: 146, line: 52]
+      Local variable table:
+        [pc: 0, pc: 147] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 147] local: c index: 1 type: Class.Result
+        [pc: 44, pc: 147] local: c2 index: 2 type: Class.Result
+        [pc: 80, pc: 147] local: c3 index: 3 type: Class.Result
+        [pc: 117, pc: 147] local: c4 index: 4 type: Class.Result
+}
