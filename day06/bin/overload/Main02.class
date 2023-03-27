@@ -1,0 +1,36 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class overload.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 10]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: overload.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 3, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new overload.Hello [16]
+     3  dup
+     4  invokespecial overload.Hello() [18]
+     7  astore_1 [h1]
+     8  new overload.Hello [16]
+    11  dup
+    12  ldc <String "안녕"> [19]
+    14  invokespecial overload.Hello(java.lang.String) [21]
+    17  astore_2 [h2]
+    18  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 8, line: 13]
+        [pc: 18, line: 15]
+      Local variable table:
+        [pc: 0, pc: 19] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 19] local: h1 index: 1 type: overload.Hello
+        [pc: 18, pc: 19] local: h2 index: 2 type: overload.Hello
+}
