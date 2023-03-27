@@ -1,0 +1,62 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+public class value.Main03 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main03();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: value.Main03
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 4
+  public static void main(java.lang.String[] args);
+     0  bipush 100
+     2  istore_1 [width]
+     3  ldc2_w <Double 3.14> [16]
+     6  dstore_2 [PI]
+     7  getstatic java.lang.System.out : java.io.PrintStream [18]
+    10  new java.lang.StringBuilder [24]
+    13  dup
+    14  ldc <String "width : "> [26]
+    16  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+    19  iload_1 [width]
+    20  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [31]
+    23  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+    26  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    29  getstatic java.lang.System.out : java.io.PrintStream [18]
+    32  ldc <String "PI : 3.14"> [44]
+    34  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    37  sipush 200
+    40  istore_1 [width]
+    41  getstatic java.lang.System.out : java.io.PrintStream [18]
+    44  new java.lang.StringBuilder [24]
+    47  dup
+    48  ldc <String "width = "> [46]
+    50  invokespecial java.lang.StringBuilder(java.lang.String) [28]
+    53  iload_1 [width]
+    54  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [31]
+    57  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [35]
+    60  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    63  getstatic java.lang.System.out : java.io.PrintStream [18]
+    66  ldc <String "PI : 3.14"> [44]
+    68  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    71  return
+      Line numbers:
+        [pc: 0, line: 7]
+        [pc: 3, line: 10]
+        [pc: 7, line: 12]
+        [pc: 29, line: 13]
+        [pc: 37, line: 16]
+        [pc: 41, line: 17]
+        [pc: 63, line: 22]
+        [pc: 71, line: 24]
+      Local variable table:
+        [pc: 0, pc: 72] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 72] local: width index: 1 type: int
+        [pc: 7, pc: 72] local: PI index: 2 type: double
+}
