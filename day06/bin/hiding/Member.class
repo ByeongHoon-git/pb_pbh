@@ -1,0 +1,81 @@
+// Compiled from Member.java (version 11 : 55.0, super bit)
+public class hiding.Member {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  private java.lang.String name;
+  
+  // Field descriptor #8 I
+  private int age;
+  
+  // Method descriptor #10 (Ljava/lang/String;I)V
+  // Stack: 2, Locals: 3
+  public Member(java.lang.String name, int age);
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [12]
+     4  aload_0 [this]
+     5  aload_1 [name]
+     6  putfield hiding.Member.name : java.lang.String [15]
+     9  aload_0 [this]
+    10  iload_2 [age]
+    11  putfield hiding.Member.age : int [17]
+    14  return
+      Line numbers:
+        [pc: 0, line: 8]
+        [pc: 4, line: 9]
+        [pc: 9, line: 10]
+        [pc: 14, line: 11]
+      Local variable table:
+        [pc: 0, pc: 15] local: this index: 0 type: hiding.Member
+        [pc: 0, pc: 15] local: name index: 1 type: java.lang.String
+        [pc: 0, pc: 15] local: age index: 2 type: int
+  
+  // Method descriptor #24 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getName();
+    0  aload_0 [this]
+    1  getfield hiding.Member.name : java.lang.String [15]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 14]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Member
+  
+  // Method descriptor #26 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setName(java.lang.String name);
+    0  aload_0 [this]
+    1  aload_1 [name]
+    2  putfield hiding.Member.name : java.lang.String [15]
+    5  return
+      Line numbers:
+        [pc: 0, line: 18]
+        [pc: 5, line: 19]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Member
+        [pc: 0, pc: 6] local: name index: 1 type: java.lang.String
+  
+  // Method descriptor #28 ()I
+  // Stack: 1, Locals: 1
+  public int getAge();
+    0  aload_0 [this]
+    1  getfield hiding.Member.age : int [17]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 22]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Member
+  
+  // Method descriptor #30 (I)V
+  // Stack: 2, Locals: 2
+  public void setAge(int age);
+    0  aload_0 [this]
+    1  iload_1 [age]
+    2  putfield hiding.Member.age : int [17]
+    5  return
+      Line numbers:
+        [pc: 0, line: 26]
+        [pc: 5, line: 27]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Member
+        [pc: 0, pc: 6] local: age index: 1 type: int
+}
