@@ -1,0 +1,68 @@
+// Compiled from Main04.java (version 11 : 55.0, super bit)
+public class hiding.Main04 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main04();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 13]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Main04
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 8, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  new hiding.Article [16]
+     3  dup
+     4  iconst_1
+     5  ldc <String "게시물1"> [18]
+     7  ldc <String "자바 게시판"> [20]
+     9  ldc <String "자바학생"> [22]
+    11  bipush 123
+    13  ldc <String "2023-01-03"> [24]
+    15  invokespecial hiding.Article(int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String) [26]
+    18  astore_1 [at]
+    19  getstatic java.lang.System.out : java.io.PrintStream [29]
+    22  aload_1 [at]
+    23  invokevirtual hiding.Article.getSeq() : int [35]
+    26  invokevirtual java.io.PrintStream.println(int) : void [39]
+    29  getstatic java.lang.System.out : java.io.PrintStream [29]
+    32  aload_1 [at]
+    33  invokevirtual hiding.Article.getSubejct() : java.lang.String [45]
+    36  invokevirtual java.io.PrintStream.println(java.lang.String) : void [49]
+    39  getstatic java.lang.System.out : java.io.PrintStream [29]
+    42  aload_1 [at]
+    43  invokevirtual hiding.Article.getContent() : java.lang.String [52]
+    46  invokevirtual java.io.PrintStream.println(java.lang.String) : void [49]
+    49  getstatic java.lang.System.out : java.io.PrintStream [29]
+    52  aload_1 [at]
+    53  invokevirtual hiding.Article.getWriter() : java.lang.String [55]
+    56  invokevirtual java.io.PrintStream.println(java.lang.String) : void [49]
+    59  getstatic java.lang.System.out : java.io.PrintStream [29]
+    62  aload_1 [at]
+    63  invokevirtual hiding.Article.getHit() : int [58]
+    66  invokevirtual java.io.PrintStream.println(int) : void [39]
+    69  getstatic java.lang.System.out : java.io.PrintStream [29]
+    72  aload_1 [at]
+    73  invokevirtual hiding.Article.getRegDate() : java.lang.String [61]
+    76  invokevirtual java.io.PrintStream.println(java.lang.String) : void [49]
+    79  return
+      Line numbers:
+        [pc: 0, line: 16]
+        [pc: 5, line: 17]
+        [pc: 11, line: 18]
+        [pc: 15, line: 16]
+        [pc: 19, line: 20]
+        [pc: 29, line: 21]
+        [pc: 39, line: 22]
+        [pc: 49, line: 23]
+        [pc: 59, line: 24]
+        [pc: 69, line: 25]
+        [pc: 79, line: 28]
+      Local variable table:
+        [pc: 0, pc: 80] local: args index: 0 type: java.lang.String[]
+        [pc: 19, pc: 80] local: at index: 1 type: hiding.Article
+}
