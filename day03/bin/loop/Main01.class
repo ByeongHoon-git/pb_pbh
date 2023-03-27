@@ -1,0 +1,55 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class loop.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: loop.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  iconst_0
+     1  istore_1 [sum]
+     2  iconst_1
+     3  istore_2 [i]
+     4  goto 14
+     7  iload_1 [sum]
+     8  iload_2 [i]
+     9  iadd
+    10  istore_1 [sum]
+    11  iinc 2 1 [i]
+    14  iload_2 [i]
+    15  bipush 10
+    17  if_icmple 7
+    20  getstatic java.lang.System.out : java.io.PrintStream [16]
+    23  new java.lang.StringBuilder [22]
+    26  dup
+    27  ldc <String "합은 : "> [24]
+    29  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    32  iload_1 [sum]
+    33  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    36  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    39  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    42  return
+      Line numbers:
+        [pc: 0, line: 8]
+        [pc: 2, line: 11]
+        [pc: 7, line: 12]
+        [pc: 11, line: 11]
+        [pc: 20, line: 15]
+        [pc: 42, line: 32]
+      Local variable table:
+        [pc: 0, pc: 43] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 43] local: sum index: 1 type: int
+        [pc: 4, pc: 20] local: i index: 2 type: int
+      Stack map table: number of frames 2
+        [pc: 7, append: {int, int}]
+        [pc: 14, same]
+}
