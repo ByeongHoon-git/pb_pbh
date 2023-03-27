@@ -1,0 +1,74 @@
+// Compiled from Main04.java (version 11 : 55.0, super bit)
+public class Class.Main04 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main04();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 14]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Main04
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 5, Locals: 3
+  public static void main(java.lang.String[] args);
+      0  new Class.Calc [16]
+      3  dup
+      4  invokespecial Class.Calc() [18]
+      7  astore_1 [c]
+      8  getstatic java.lang.System.out : java.io.PrintStream [19]
+     11  new java.lang.StringBuilder [25]
+     14  dup
+     15  ldc <String "100 + 5 = "> [27]
+     17  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     20  aload_1 [c]
+     21  bipush 100
+     23  iconst_5
+     24  invokevirtual Class.Calc.plus(int, int) : int [32]
+     27  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     30  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     33  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+     36  new Class.Calc [16]
+     39  dup
+     40  invokespecial Class.Calc() [18]
+     43  astore_2 [c2]
+     44  getstatic java.lang.System.out : java.io.PrintStream [19]
+     47  new java.lang.StringBuilder [25]
+     50  dup
+     51  ldc <String "100 - 5 = "> [49]
+     53  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     56  aload_2 [c2]
+     57  bipush 100
+     59  iconst_5
+     60  invokevirtual Class.Calc.minus(int, int) : int [51]
+     63  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     66  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     69  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+     72  getstatic java.lang.System.out : java.io.PrintStream [19]
+     75  new java.lang.StringBuilder [25]
+     78  dup
+     79  ldc <String "100 - 5 = "> [49]
+     81  invokespecial java.lang.StringBuilder(java.lang.String) [29]
+     84  aload_1 [c]
+     85  bipush 100
+     87  iconst_5
+     88  invokevirtual Class.Calc.minus(int, int) : int [51]
+     91  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     94  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     97  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    100  return
+      Line numbers:
+        [pc: 0, line: 17]
+        [pc: 8, line: 18]
+        [pc: 36, line: 20]
+        [pc: 44, line: 21]
+        [pc: 72, line: 23]
+        [pc: 100, line: 24]
+      Local variable table:
+        [pc: 0, pc: 101] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 101] local: c index: 1 type: Class.Calc
+        [pc: 44, pc: 101] local: c2 index: 2 type: Class.Calc
+}
