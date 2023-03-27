@@ -1,0 +1,57 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+class Class.HelloWorld {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String message;
+  
+  // Method descriptor #8 ()V
+  // Stack: 1, Locals: 1
+  HelloWorld();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [10]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.HelloWorld
+  
+  // Method descriptor #8 ()V
+  // Stack: 2, Locals: 1
+  void sayHello();
+     0  getstatic java.lang.System.out : java.io.PrintStream [17]
+     3  aload_0 [this]
+     4  getfield Class.HelloWorld.message : java.lang.String [23]
+     7  invokevirtual java.io.PrintStream.println(java.lang.String) : void [25]
+    10  return
+      Line numbers:
+        [pc: 0, line: 7]
+        [pc: 10, line: 8]
+      Local variable table:
+        [pc: 0, pc: 11] local: this index: 0 type: Class.HelloWorld
+  
+  // Method descriptor #8 ()V
+  // Stack: 2, Locals: 1
+  void setEng();
+    0  aload_0 [this]
+    1  ldc <String "Hello Java"> [32]
+    3  putfield Class.HelloWorld.message : java.lang.String [23]
+    6  return
+      Line numbers:
+        [pc: 0, line: 10]
+        [pc: 6, line: 11]
+      Local variable table:
+        [pc: 0, pc: 7] local: this index: 0 type: Class.HelloWorld
+  
+  // Method descriptor #8 ()V
+  // Stack: 2, Locals: 1
+  void setKor();
+    0  aload_0 [this]
+    1  ldc <String "안녕자바"> [35]
+    3  putfield Class.HelloWorld.message : java.lang.String [23]
+    6  return
+      Line numbers:
+        [pc: 0, line: 13]
+        [pc: 6, line: 14]
+      Local variable table:
+        [pc: 0, pc: 7] local: this index: 0 type: Class.HelloWorld
+}
