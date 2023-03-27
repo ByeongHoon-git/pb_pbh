@@ -1,0 +1,74 @@
+// Compiled from QNAArticle.java (version 11 : 55.0, super bit)
+public class Extends.QNAArticle extends Extends.Article {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  private java.lang.String answer;
+  
+  // Method descriptor #8 ()V
+  // Stack: 1, Locals: 1
+  public QNAArticle();
+    0  aload_0 [this]
+    1  invokespecial Extends.Article() [10]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.QNAArticle
+  
+  // Method descriptor #17 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getAnswer();
+    0  aload_0 [this]
+    1  getfield Extends.QNAArticle.answer : java.lang.String [18]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 7]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.QNAArticle
+  
+  // Method descriptor #21 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setAnswer(java.lang.String answer);
+    0  aload_0 [this]
+    1  aload_1 [answer]
+    2  putfield Extends.QNAArticle.answer : java.lang.String [18]
+    5  return
+      Line numbers:
+        [pc: 0, line: 11]
+        [pc: 5, line: 12]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Extends.QNAArticle
+        [pc: 0, pc: 6] local: answer index: 1 type: java.lang.String
+  
+  // Method descriptor #17 ()Ljava/lang/String;
+  // Stack: 3, Locals: 1
+  public java.lang.String toString();
+     0  new java.lang.StringBuilder [23]
+     3  dup
+     4  ldc <String "질문/답변 [답변="> [25]
+     6  invokespecial java.lang.StringBuilder(java.lang.String) [27]
+     9  aload_0 [this]
+    10  getfield Extends.QNAArticle.answer : java.lang.String [18]
+    13  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [29]
+    16  ldc <String ", 글번호="> [33]
+    18  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [29]
+    21  aload_0 [this]
+    22  invokevirtual Extends.QNAArticle.getNum() : int [35]
+    25  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [39]
+    28  ldc <String ", 제목="> [42]
+    30  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [29]
+    33  aload_0 [this]
+    34  invokevirtual Extends.QNAArticle.getTitle() : java.lang.String [44]
+    37  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [29]
+    40  ldc <String "]"> [47]
+    42  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [29]
+    45  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [49]
+    48  areturn
+      Line numbers:
+        [pc: 0, line: 16]
+        [pc: 16, line: 17]
+        [pc: 28, line: 18]
+        [pc: 45, line: 16]
+      Local variable table:
+        [pc: 0, pc: 49] local: this index: 0 type: Extends.QNAArticle
+}
