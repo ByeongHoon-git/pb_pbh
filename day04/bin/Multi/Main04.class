@@ -1,0 +1,75 @@
+// Compiled from Main04.java (version 11 : 55.0, super bit)
+public class multi.Main04 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main04();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: multi.Main04
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 4
+  public static void main(java.lang.String[] args);
+     0  iconst_2
+     1  istore_1 [i]
+     2  goto 72
+     5  iconst_1
+     6  istore_2 [j]
+     7  goto 55
+    10  iload_1 [i]
+    11  iload_2 [j]
+    12  imul
+    13  istore_3 [k]
+    14  getstatic java.lang.System.out : java.io.PrintStream [16]
+    17  new java.lang.StringBuilder [22]
+    20  dup
+    21  iload_1 [i]
+    22  invokestatic java.lang.String.valueOf(int) : java.lang.String [24]
+    25  invokespecial java.lang.StringBuilder(java.lang.String) [30]
+    28  ldc <String "*"> [33]
+    30  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [35]
+    33  iload_2 [j]
+    34  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [39]
+    37  ldc <String "="> [42]
+    39  invokevirtual java.lang.StringBuilder.append(java.lang.String) : java.lang.StringBuilder [35]
+    42  iload_3 [k]
+    43  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [39]
+    46  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [44]
+    49  invokevirtual java.io.PrintStream.println(java.lang.String) : void [48]
+    52  iinc 2 1 [j]
+    55  iload_2 [j]
+    56  bipush 9
+    58  if_icmple 10
+    61  getstatic java.lang.System.out : java.io.PrintStream [16]
+    64  ldc <String "------------------------"> [53]
+    66  invokevirtual java.io.PrintStream.println(java.lang.String) : void [48]
+    69  iinc 1 1 [i]
+    72  iload_1 [i]
+    73  bipush 9
+    75  if_icmple 5
+    78  return
+      Line numbers:
+        [pc: 0, line: 25]
+        [pc: 5, line: 26]
+        [pc: 10, line: 27]
+        [pc: 14, line: 28]
+        [pc: 52, line: 26]
+        [pc: 61, line: 30]
+        [pc: 69, line: 25]
+        [pc: 78, line: 32]
+      Local variable table:
+        [pc: 0, pc: 79] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 78] local: i index: 1 type: int
+        [pc: 7, pc: 61] local: j index: 2 type: int
+        [pc: 14, pc: 52] local: k index: 3 type: int
+      Stack map table: number of frames 4
+        [pc: 5, append: {int}]
+        [pc: 10, append: {int}]
+        [pc: 55, same]
+        [pc: 72, chop 1 local(s)]
+}
