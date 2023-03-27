@@ -1,0 +1,20 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+class Class.Character {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String name;
+  
+  // Field descriptor #8 I
+  int age;
+  
+  // Method descriptor #10 ()V
+  // Stack: 1, Locals: 1
+  Character();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [12]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Character
+}
