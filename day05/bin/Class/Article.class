@@ -1,0 +1,63 @@
+// Compiled from Main08.java (version 11 : 55.0, super bit)
+class Class.Article {
+  
+  // Field descriptor #6 I
+  int seq;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  java.lang.String subject;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  java.lang.String writer;
+  
+  // Method descriptor #11 (ILjava/lang/String;Ljava/lang/String;)V
+  // Stack: 2, Locals: 4
+  Article(int seq, java.lang.String subject, java.lang.String writer);
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [13]
+     4  aload_0 [this]
+     5  iload_1 [seq]
+     6  putfield Class.Article.seq : int [16]
+     9  aload_0 [this]
+    10  aload_2 [subject]
+    11  putfield Class.Article.subject : java.lang.String [18]
+    14  aload_0 [this]
+    15  aload_3 [writer]
+    16  putfield Class.Article.writer : java.lang.String [20]
+    19  return
+      Line numbers:
+        [pc: 0, line: 8]
+        [pc: 4, line: 9]
+        [pc: 9, line: 10]
+        [pc: 14, line: 11]
+        [pc: 19, line: 12]
+      Local variable table:
+        [pc: 0, pc: 20] local: this index: 0 type: Class.Article
+        [pc: 0, pc: 20] local: seq index: 1 type: int
+        [pc: 0, pc: 20] local: subject index: 2 type: java.lang.String
+        [pc: 0, pc: 20] local: writer index: 3 type: java.lang.String
+  
+  // Method descriptor #15 ()V
+  // Stack: 2, Locals: 1
+  void print();
+     0  getstatic java.lang.System.out : java.io.PrintStream [27]
+     3  aload_0 [this]
+     4  getfield Class.Article.seq : int [16]
+     7  invokevirtual java.io.PrintStream.println(int) : void [33]
+    10  getstatic java.lang.System.out : java.io.PrintStream [27]
+    13  aload_0 [this]
+    14  getfield Class.Article.subject : java.lang.String [18]
+    17  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    20  getstatic java.lang.System.out : java.io.PrintStream [27]
+    23  aload_0 [this]
+    24  getfield Class.Article.writer : java.lang.String [20]
+    27  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    30  return
+      Line numbers:
+        [pc: 0, line: 15]
+        [pc: 10, line: 16]
+        [pc: 20, line: 17]
+        [pc: 30, line: 18]
+      Local variable table:
+        [pc: 0, pc: 31] local: this index: 0 type: Class.Article
+}
