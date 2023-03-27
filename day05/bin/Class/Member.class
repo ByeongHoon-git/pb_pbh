@@ -1,0 +1,89 @@
+// Compiled from Main06.java (version 11 : 55.0, super bit)
+class Class.Member {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String name;
+  
+  // Field descriptor #8 I
+  int age;
+  
+  // Method descriptor #10 ()V
+  // Stack: 1, Locals: 1
+  Member();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [12]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Member
+  
+  // Method descriptor #19 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  void setName(java.lang.String name);
+    0  aload_0 [this]
+    1  aload_1 [name]
+    2  putfield Class.Member.name : java.lang.String [20]
+    5  return
+      Line numbers:
+        [pc: 0, line: 8]
+        [pc: 5, line: 9]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Class.Member
+        [pc: 0, pc: 6] local: name index: 1 type: java.lang.String
+  
+  // Method descriptor #23 (I)V
+  // Stack: 2, Locals: 2
+  void setAge(int age);
+    0  aload_0 [this]
+    1  iload_1 [age]
+    2  putfield Class.Member.age : int [24]
+    5  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 5, line: 13]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Class.Member
+        [pc: 0, pc: 6] local: age index: 1 type: int
+  
+  // Method descriptor #27 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  java.lang.String getName();
+    0  aload_0 [this]
+    1  getfield Class.Member.name : java.lang.String [20]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 16]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Member
+  
+  // Method descriptor #29 ()I
+  // Stack: 1, Locals: 1
+  int getAge();
+    0  aload_0 [this]
+    1  getfield Class.Member.age : int [24]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 19]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Member
+  
+  // Method descriptor #10 ()V
+  // Stack: 2, Locals: 1
+  void say();
+     0  getstatic java.lang.System.out : java.io.PrintStream [31]
+     3  aload_0 [this]
+     4  invokevirtual Class.Member.getName() : java.lang.String [37]
+     7  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    10  getstatic java.lang.System.out : java.io.PrintStream [31]
+    13  aload_0 [this]
+    14  invokevirtual Class.Member.getAge() : int [44]
+    17  invokevirtual java.io.PrintStream.println(int) : void [46]
+    20  return
+      Line numbers:
+        [pc: 0, line: 23]
+        [pc: 10, line: 24]
+        [pc: 20, line: 25]
+      Local variable table:
+        [pc: 0, pc: 21] local: this index: 0 type: Class.Member
+}
