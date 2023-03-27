@@ -1,0 +1,38 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class value.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: value.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  bipush 100
+     2  istore_1 [num1]
+     3  getstatic java.lang.System.out : java.io.PrintStream [16]
+     6  iload_1 [num1]
+     7  invokevirtual java.io.PrintStream.println(int) : void [22]
+    10  sipush 200
+    13  istore_1 [num1]
+    14  getstatic java.lang.System.out : java.io.PrintStream [16]
+    17  iload_1 [num1]
+    18  invokevirtual java.io.PrintStream.println(int) : void [22]
+    21  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 7]
+        [pc: 10, line: 9]
+        [pc: 14, line: 10]
+        [pc: 21, line: 12]
+      Local variable table:
+        [pc: 0, pc: 22] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 22] local: num1 index: 1 type: int
+}
