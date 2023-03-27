@@ -1,0 +1,92 @@
+// Compiled from Main05.java (version 11 : 55.0, super bit)
+public class operator.Main05 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main05();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: operator.Main05
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 7
+  public static void main(java.lang.String[] args);
+     0  bipush 123
+     2  istore_1 [num1]
+     3  sipush 456
+     6  istore_2 [num2]
+     7  iload_1 [num1]
+     8  iload_2 [num2]
+     9  if_icmpne 16
+    12  iconst_1
+    13  goto 17
+    16  iconst_0
+    17  istore_3 [result2]
+    18  getstatic java.lang.System.out : java.io.PrintStream [16]
+    21  iload_3 [result2]
+    22  invokevirtual java.io.PrintStream.println(boolean) : void [22]
+    25  iload_1 [num1]
+    26  iload_2 [num2]
+    27  if_icmpeq 34
+    30  iconst_1
+    31  goto 35
+    34  iconst_0
+    35  istore 4 [result3]
+    37  getstatic java.lang.System.out : java.io.PrintStream [16]
+    40  iload 4 [result3]
+    42  invokevirtual java.io.PrintStream.println(boolean) : void [22]
+    45  iload_1 [num1]
+    46  iload_2 [num2]
+    47  if_icmple 54
+    50  iconst_1
+    51  goto 55
+    54  iconst_0
+    55  istore 5 [result4]
+    57  getstatic java.lang.System.out : java.io.PrintStream [16]
+    60  iload 5 [result4]
+    62  invokevirtual java.io.PrintStream.println(boolean) : void [22]
+    65  iload_1 [num1]
+    66  iload_2 [num2]
+    67  if_icmpgt 74
+    70  iconst_1
+    71  goto 75
+    74  iconst_0
+    75  istore 6 [result5]
+    77  getstatic java.lang.System.out : java.io.PrintStream [16]
+    80  iload 6 [result5]
+    82  invokevirtual java.io.PrintStream.println(boolean) : void [22]
+    85  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 7]
+        [pc: 7, line: 10]
+        [pc: 18, line: 11]
+        [pc: 25, line: 14]
+        [pc: 37, line: 15]
+        [pc: 45, line: 18]
+        [pc: 57, line: 19]
+        [pc: 65, line: 23]
+        [pc: 77, line: 24]
+        [pc: 85, line: 25]
+      Local variable table:
+        [pc: 0, pc: 86] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 86] local: num1 index: 1 type: int
+        [pc: 7, pc: 86] local: num2 index: 2 type: int
+        [pc: 18, pc: 86] local: result2 index: 3 type: boolean
+        [pc: 37, pc: 86] local: result3 index: 4 type: boolean
+        [pc: 57, pc: 86] local: result4 index: 5 type: boolean
+        [pc: 77, pc: 86] local: result5 index: 6 type: boolean
+      Stack map table: number of frames 8
+        [pc: 16, append: {int, int}]
+        [pc: 17, same_locals_1_stack_item, stack: {int}]
+        [pc: 34, append: {int}]
+        [pc: 35, same_locals_1_stack_item, stack: {int}]
+        [pc: 54, append: {int}]
+        [pc: 55, same_locals_1_stack_item, stack: {int}]
+        [pc: 74, append: {int}]
+        [pc: 75, same_locals_1_stack_item, stack: {int}]
+}
