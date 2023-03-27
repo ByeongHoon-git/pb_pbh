@@ -1,0 +1,79 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class method.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: method.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 1
+  public static void main(java.lang.String[] args);
+     0  bipush 10
+     2  bipush 20
+     4  invokestatic method.Main02.plus(int, int) : void [16]
+     7  bipush 31
+     9  bipush 10
+    11  invokestatic method.Main02.plus(int, int) : void [16]
+    14  bipush 18
+    16  bipush 15
+    18  invokestatic method.Main02.plus(int, int) : void [16]
+    21  bipush 10
+    23  iconst_5
+    24  invokestatic method.Main02.minus(int, int) : void [20]
+    27  bipush 10
+    29  bipush 15
+    31  invokestatic method.Main02.minus(int, int) : void [20]
+    34  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 7, line: 7]
+        [pc: 14, line: 8]
+        [pc: 21, line: 9]
+        [pc: 27, line: 10]
+        [pc: 34, line: 13]
+      Local variable table:
+        [pc: 0, pc: 35] local: args index: 0 type: java.lang.String[]
+  
+  // Method descriptor #19 (II)V
+  // Stack: 2, Locals: 3
+  public static void plus(int x, int y);
+     0  iload_0 [x]
+     1  iload_1 [y]
+     2  iadd
+     3  istore_2 [z]
+     4  getstatic java.lang.System.out : java.io.PrintStream [25]
+     7  iload_2 [z]
+     8  invokevirtual java.io.PrintStream.println(int) : void [31]
+    11  return
+      Line numbers:
+        [pc: 0, line: 16]
+        [pc: 4, line: 17]
+        [pc: 11, line: 18]
+      Local variable table:
+        [pc: 0, pc: 12] local: x index: 0 type: int
+        [pc: 0, pc: 12] local: y index: 1 type: int
+        [pc: 4, pc: 12] local: z index: 2 type: int
+  
+  // Method descriptor #19 (II)V
+  // Stack: 3, Locals: 2
+  public static void minus(int x, int y);
+     0  getstatic java.lang.System.out : java.io.PrintStream [25]
+     3  iload_0 [x]
+     4  iload_1 [y]
+     5  isub
+     6  invokevirtual java.io.PrintStream.println(int) : void [31]
+     9  return
+      Line numbers:
+        [pc: 0, line: 23]
+        [pc: 9, line: 24]
+      Local variable table:
+        [pc: 0, pc: 10] local: x index: 0 type: int
+        [pc: 0, pc: 10] local: y index: 1 type: int
+}
