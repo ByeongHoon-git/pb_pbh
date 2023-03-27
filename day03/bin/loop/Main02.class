@@ -1,0 +1,90 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class loop.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: loop.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 4
+  public static void main(java.lang.String[] args);
+     0  iconst_0
+     1  istore_1 [sum]
+     2  iconst_1
+     3  istore_2 [i]
+     4  goto 14
+     7  iload_1 [sum]
+     8  iload_2 [i]
+     9  iadd
+    10  istore_1 [sum]
+    11  iinc 2 1 [i]
+    14  iload_2 [i]
+    15  bipush 100
+    17  if_icmple 7
+    20  getstatic java.lang.System.out : java.io.PrintStream [16]
+    23  new java.lang.StringBuilder [22]
+    26  dup
+    27  ldc <String "sum : "> [24]
+    29  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    32  iload_1 [sum]
+    33  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    36  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    39  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    42  getstatic java.lang.System.out : java.io.PrintStream [16]
+    45  ldc <String "--------------------------"> [42]
+    47  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    50  iconst_0
+    51  istore_2 [sum2]
+    52  iconst_2
+    53  istore_3 [i]
+    54  goto 64
+    57  iload_2 [sum2]
+    58  iload_3 [i]
+    59  iadd
+    60  istore_2 [sum2]
+    61  iinc 3 1 [i]
+    64  iload_3 [i]
+    65  bipush 99
+    67  if_icmple 57
+    70  getstatic java.lang.System.out : java.io.PrintStream [16]
+    73  new java.lang.StringBuilder [22]
+    76  dup
+    77  ldc <String "합2 : "> [44]
+    79  invokespecial java.lang.StringBuilder(java.lang.String) [26]
+    82  iload_2 [sum2]
+    83  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [29]
+    86  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [33]
+    89  invokevirtual java.io.PrintStream.println(java.lang.String) : void [37]
+    92  return
+      Line numbers:
+        [pc: 0, line: 7]
+        [pc: 2, line: 8]
+        [pc: 7, line: 9]
+        [pc: 11, line: 8]
+        [pc: 20, line: 11]
+        [pc: 42, line: 13]
+        [pc: 50, line: 18]
+        [pc: 52, line: 19]
+        [pc: 57, line: 20]
+        [pc: 61, line: 19]
+        [pc: 70, line: 22]
+        [pc: 92, line: 28]
+      Local variable table:
+        [pc: 0, pc: 93] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 93] local: sum index: 1 type: int
+        [pc: 4, pc: 20] local: i index: 2 type: int
+        [pc: 52, pc: 93] local: sum2 index: 2 type: int
+        [pc: 54, pc: 70] local: i index: 3 type: int
+      Stack map table: number of frames 4
+        [pc: 7, append: {int, int}]
+        [pc: 14, same]
+        [pc: 57, append: {int}]
+        [pc: 64, same]
+}
