@@ -1,0 +1,35 @@
+// Compiled from HelloJava.java (version 11 : 55.0, super bit)
+public class hello.HelloJava {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public HelloJava();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 10]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hello.HelloJava
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 1
+  public static void main(java.lang.String[] args);
+     0  getstatic java.lang.System.out : java.io.PrintStream [16]
+     3  ldc <String "Hello Java~"> [22]
+     5  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     8  getstatic java.lang.System.out : java.io.PrintStream [16]
+    11  ldc <String "자바시간"> [30]
+    13  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    16  getstatic java.lang.System.out : java.io.PrintStream [16]
+    19  ldc <String "프린트 작성"> [32]
+    21  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    24  return
+      Line numbers:
+        [pc: 0, line: 19]
+        [pc: 8, line: 20]
+        [pc: 16, line: 21]
+        [pc: 24, line: 23]
+      Local variable table:
+        [pc: 0, pc: 25] local: args index: 0 type: java.lang.String[]
+}
