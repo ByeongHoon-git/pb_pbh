@@ -1,0 +1,40 @@
+// Compiled from Main06.java (version 11 : 55.0, super bit)
+public class Class.Main06 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main06();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 28]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Class.Main06
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  new Class.Member [16]
+     3  dup
+     4  invokespecial Class.Member() [18]
+     7  astore_1 [member]
+     8  aload_1 [member]
+     9  ldc <String "자바학생"> [19]
+    11  invokevirtual Class.Member.setName(java.lang.String) : void [21]
+    14  aload_1 [member]
+    15  bipush 20
+    17  invokevirtual Class.Member.setAge(int) : void [25]
+    20  aload_1 [member]
+    21  invokevirtual Class.Member.say() : void [29]
+    24  return
+      Line numbers:
+        [pc: 0, line: 31]
+        [pc: 8, line: 32]
+        [pc: 14, line: 33]
+        [pc: 20, line: 34]
+        [pc: 24, line: 37]
+      Local variable table:
+        [pc: 0, pc: 25] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 25] local: member index: 1 type: Class.Member
+}
