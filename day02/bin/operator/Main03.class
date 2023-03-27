@@ -1,0 +1,74 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+public class operator.Main03 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main03();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: operator.Main03
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 6
+  public static void main(java.lang.String[] args);
+     0  iconst_1
+     1  istore_1 [plus_num]
+     2  iinc 1 1 [plus_num]
+     5  iinc 1 1 [plus_num]
+     8  iinc 1 1 [plus_num]
+    11  iinc 1 1 [plus_num]
+    14  getstatic java.lang.System.out : java.io.PrintStream [16]
+    17  iload_1 [plus_num]
+    18  invokevirtual java.io.PrintStream.println(int) : void [22]
+    21  iconst_5
+    22  istore_2 [minus_num]
+    23  iinc 2 -1 [minus_num]
+    26  iinc 2 -1 [minus_num]
+    29  iinc 2 -1 [minus_num]
+    32  iinc 2 -1 [minus_num]
+    35  getstatic java.lang.System.out : java.io.PrintStream [16]
+    38  ldc <String "-------------------------------"> [28]
+    40  invokevirtual java.io.PrintStream.println(java.lang.String) : void [30]
+    43  bipush 100
+    45  istore_3 [a]
+    46  iconst_1
+    47  istore 4 [x]
+    49  iload_3 [a]
+    50  iload 4 [x]
+    52  iinc 4 1 [x]
+    55  iadd
+    56  istore 5 [y]
+    58  getstatic java.lang.System.out : java.io.PrintStream [16]
+    61  iload 5 [y]
+    63  invokevirtual java.io.PrintStream.println(int) : void [22]
+    66  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 2, line: 7]
+        [pc: 5, line: 8]
+        [pc: 8, line: 9]
+        [pc: 11, line: 10]
+        [pc: 14, line: 12]
+        [pc: 21, line: 14]
+        [pc: 23, line: 15]
+        [pc: 26, line: 16]
+        [pc: 29, line: 17]
+        [pc: 32, line: 18]
+        [pc: 35, line: 20]
+        [pc: 43, line: 22]
+        [pc: 46, line: 23]
+        [pc: 49, line: 24]
+        [pc: 58, line: 25]
+        [pc: 66, line: 27]
+      Local variable table:
+        [pc: 0, pc: 67] local: args index: 0 type: java.lang.String[]
+        [pc: 2, pc: 67] local: plus_num index: 1 type: int
+        [pc: 23, pc: 67] local: minus_num index: 2 type: int
+        [pc: 46, pc: 67] local: a index: 3 type: int
+        [pc: 49, pc: 67] local: x index: 4 type: int
+        [pc: 58, pc: 67] local: y index: 5 type: int
+}
