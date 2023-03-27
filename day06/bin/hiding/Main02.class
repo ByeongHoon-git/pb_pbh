@@ -1,0 +1,51 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class hiding.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 35]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new hiding.Student [16]
+     3  dup
+     4  invokespecial hiding.Student() [18]
+     7  astore_1 [s]
+     8  aload_1 [s]
+     9  ldc <String "자바학생"> [19]
+    11  invokevirtual hiding.Student.setName(java.lang.String) : void [21]
+    14  aload_1 [s]
+    15  bipush 20
+    17  invokevirtual hiding.Student.setAge(int) : void [25]
+    20  aload_1 [s]
+    21  invokevirtual hiding.Student.getName() : java.lang.String [29]
+    24  astore_2 [name]
+    25  getstatic java.lang.System.out : java.io.PrintStream [33]
+    28  aload_2 [name]
+    29  invokevirtual java.io.PrintStream.println(java.lang.String) : void [39]
+    32  getstatic java.lang.System.out : java.io.PrintStream [33]
+    35  aload_1 [s]
+    36  invokevirtual hiding.Student.getAge() : int [44]
+    39  invokevirtual java.io.PrintStream.println(int) : void [48]
+    42  return
+      Line numbers:
+        [pc: 0, line: 38]
+        [pc: 8, line: 39]
+        [pc: 14, line: 40]
+        [pc: 20, line: 42]
+        [pc: 25, line: 43]
+        [pc: 32, line: 45]
+        [pc: 42, line: 48]
+      Local variable table:
+        [pc: 0, pc: 43] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 43] local: s index: 1 type: hiding.Student
+        [pc: 25, pc: 43] local: name index: 2 type: java.lang.String
+}
