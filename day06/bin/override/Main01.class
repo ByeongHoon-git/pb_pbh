@@ -1,0 +1,41 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class override.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 18]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: override.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new override.English [16]
+     3  dup
+     4  invokespecial override.English() [18]
+     7  astore_1 [e]
+     8  aload_1 [e]
+     9  invokevirtual override.English.say() : void [19]
+    12  new override.Korean [22]
+    15  dup
+    16  invokespecial override.Korean() [24]
+    19  astore_2 [ko]
+    20  aload_2 [ko]
+    21  invokevirtual override.Korean.say() : void [25]
+    24  return
+      Line numbers:
+        [pc: 0, line: 20]
+        [pc: 8, line: 21]
+        [pc: 12, line: 22]
+        [pc: 20, line: 23]
+        [pc: 24, line: 24]
+      Local variable table:
+        [pc: 0, pc: 25] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 25] local: e index: 1 type: override.English
+        [pc: 20, pc: 25] local: ko index: 2 type: override.Korean
+}
