@@ -1,0 +1,73 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class Extends.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 9]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new Extends.FileArticle [16]
+     3  dup
+     4  invokespecial Extends.FileArticle() [18]
+     7  astore_1 [fileA]
+     8  aload_1 [fileA]
+     9  iconst_1
+    10  invokevirtual Extends.FileArticle.setNum(int) : void [19]
+    13  aload_1 [fileA]
+    14  ldc <String "파일 업로드 첫번째"> [23]
+    16  invokevirtual Extends.FileArticle.setTitle(java.lang.String) : void [25]
+    19  aload_1 [fileA]
+    20  ldc <String "java.ppt"> [29]
+    22  invokevirtual Extends.FileArticle.setFilaName(java.lang.String) : void [31]
+    25  getstatic java.lang.System.out : java.io.PrintStream [34]
+    28  aload_1 [fileA]
+    29  invokevirtual Extends.FileArticle.toString() : java.lang.String [40]
+    32  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    35  getstatic java.lang.System.out : java.io.PrintStream [34]
+    38  ldc <String "-----------------"> [49]
+    40  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    43  new Extends.QNAArticle [51]
+    46  dup
+    47  invokespecial Extends.QNAArticle() [53]
+    50  astore_2 [qna]
+    51  aload_2 [qna]
+    52  iconst_1
+    53  invokevirtual Extends.QNAArticle.setNum(int) : void [54]
+    56  aload_2 [qna]
+    57  ldc <String "첫번째 질문"> [55]
+    59  invokevirtual Extends.QNAArticle.setTitle(java.lang.String) : void [57]
+    62  aload_2 [qna]
+    63  ldc <String "첫번째 답변"> [58]
+    65  invokevirtual Extends.QNAArticle.setAnswer(java.lang.String) : void [60]
+    68  getstatic java.lang.System.out : java.io.PrintStream [34]
+    71  aload_2 [qna]
+    72  invokevirtual Extends.QNAArticle.toString() : java.lang.String [63]
+    75  invokevirtual java.io.PrintStream.println(java.lang.String) : void [44]
+    78  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 8, line: 13]
+        [pc: 13, line: 14]
+        [pc: 19, line: 15]
+        [pc: 25, line: 19]
+        [pc: 35, line: 20]
+        [pc: 43, line: 22]
+        [pc: 51, line: 23]
+        [pc: 56, line: 24]
+        [pc: 62, line: 25]
+        [pc: 68, line: 26]
+        [pc: 78, line: 28]
+      Local variable table:
+        [pc: 0, pc: 79] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 79] local: fileA index: 1 type: Extends.FileArticle
+        [pc: 51, pc: 79] local: qna index: 2 type: Extends.QNAArticle
+}
