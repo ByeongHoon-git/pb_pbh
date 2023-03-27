@@ -1,0 +1,36 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+class Class.Student {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String name;
+  
+  // Field descriptor #8 I
+  int age;
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String number;
+  
+  // Method descriptor #11 ()V
+  // Stack: 2, Locals: 1
+  Student();
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [13]
+     4  aload_0 [this]
+     5  ldc <String "자바학생"> [15]
+     7  putfield Class.Student.name : java.lang.String [17]
+    10  aload_0 [this]
+    11  bipush 20
+    13  putfield Class.Student.age : int [19]
+    16  aload_0 [this]
+    17  ldc <String "01012345678"> [21]
+    19  putfield Class.Student.number : java.lang.String [23]
+    22  return
+      Line numbers:
+        [pc: 0, line: 4]
+        [pc: 4, line: 6]
+        [pc: 10, line: 7]
+        [pc: 16, line: 8]
+        [pc: 22, line: 4]
+      Local variable table:
+        [pc: 0, pc: 23] local: this index: 0 type: Class.Student
+}
