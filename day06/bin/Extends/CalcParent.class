@@ -1,0 +1,42 @@
+// Compiled from CalcParent.java (version 11 : 55.0, super bit)
+public class Extends.CalcParent {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public CalcParent();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.CalcParent
+  
+  // Method descriptor #15 (II)I
+  // Stack: 2, Locals: 3
+  public int plus(int x, int y);
+    0  iload_1 [x]
+    1  iload_2 [y]
+    2  iadd
+    3  ireturn
+      Line numbers:
+        [pc: 0, line: 6]
+      Local variable table:
+        [pc: 0, pc: 4] local: this index: 0 type: Extends.CalcParent
+        [pc: 0, pc: 4] local: x index: 1 type: int
+        [pc: 0, pc: 4] local: y index: 2 type: int
+  
+  // Method descriptor #15 (II)I
+  // Stack: 2, Locals: 3
+  public int minus(int x, int y);
+    0  iload_1 [x]
+    1  iload_2 [y]
+    2  isub
+    3  ireturn
+      Line numbers:
+        [pc: 0, line: 10]
+      Local variable table:
+        [pc: 0, pc: 4] local: this index: 0 type: Extends.CalcParent
+        [pc: 0, pc: 4] local: x index: 1 type: int
+        [pc: 0, pc: 4] local: y index: 2 type: int
+}
