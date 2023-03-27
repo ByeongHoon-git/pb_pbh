@@ -1,0 +1,56 @@
+// Compiled from Main07.java (version 11 : 55.0, super bit)
+class Class.Book {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String subject;
+  
+  // Field descriptor #6 Ljava/lang/String;
+  java.lang.String content;
+  
+  // Method descriptor #9 ()V
+  // Stack: 2, Locals: 1
+  Book();
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [11]
+     4  getstatic java.lang.System.out : java.io.PrintStream [13]
+     7  ldc <String "생성자 호출"> [19]
+     9  invokevirtual java.io.PrintStream.println(java.lang.String) : void [21]
+    12  aload_0 [this]
+    13  ldc <String "JAVA입문"> [27]
+    15  putfield Class.Book.subject : java.lang.String [29]
+    18  aload_0 [this]
+    19  ldc <String "JAVA는 객체지향 언어입니다."> [31]
+    21  putfield Class.Book.content : java.lang.String [33]
+    24  return
+      Line numbers:
+        [pc: 0, line: 7]
+        [pc: 4, line: 8]
+        [pc: 12, line: 9]
+        [pc: 18, line: 10]
+        [pc: 24, line: 11]
+      Local variable table:
+        [pc: 0, pc: 25] local: this index: 0 type: Class.Book
+  
+  // Method descriptor #9 ()V
+  // Stack: 2, Locals: 1
+  void read();
+     0  getstatic java.lang.System.out : java.io.PrintStream [13]
+     3  ldc <String "read()메서드 실행됨"> [40]
+     5  invokevirtual java.io.PrintStream.println(java.lang.String) : void [21]
+     8  getstatic java.lang.System.out : java.io.PrintStream [13]
+    11  aload_0 [this]
+    12  getfield Class.Book.subject : java.lang.String [29]
+    15  invokevirtual java.io.PrintStream.println(java.lang.String) : void [21]
+    18  getstatic java.lang.System.out : java.io.PrintStream [13]
+    21  aload_0 [this]
+    22  getfield Class.Book.content : java.lang.String [33]
+    25  invokevirtual java.io.PrintStream.println(java.lang.String) : void [21]
+    28  return
+      Line numbers:
+        [pc: 0, line: 14]
+        [pc: 8, line: 15]
+        [pc: 18, line: 16]
+        [pc: 28, line: 17]
+      Local variable table:
+        [pc: 0, pc: 29] local: this index: 0 type: Class.Book
+}
