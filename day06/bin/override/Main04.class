@@ -1,0 +1,62 @@
+// Compiled from Main04.java (version 11 : 55.0, super bit)
+public class override.Main04 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main04();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: override.Main04
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 3, Locals: 4
+  public static void main(java.lang.String[] args);
+     0  new override.Army [16]
+     3  dup
+     4  ldc <String "육군"> [18]
+     6  invokespecial override.Army(java.lang.String) [20]
+     9  astore_1 [am]
+    10  new override.Navy [23]
+    13  dup
+    14  ldc <String "해군"> [25]
+    16  invokespecial override.Navy(java.lang.String) [27]
+    19  astore_2 [nv]
+    20  new override.AirForce [28]
+    23  dup
+    24  ldc <String "공군"> [30]
+    26  invokespecial override.AirForce(java.lang.String) [32]
+    29  astore_3 [af]
+    30  aload_1 [am]
+    31  invokevirtual override.Army.attack() : void [33]
+    34  aload_1 [am]
+    35  invokevirtual override.Army.tank() : void [36]
+    38  aload_2 [nv]
+    39  invokevirtual override.Navy.attack() : void [39]
+    42  aload_2 [nv]
+    43  invokevirtual override.Navy.nucleus() : void [40]
+    46  aload_3 [af]
+    47  invokevirtual override.AirForce.attack() : void [43]
+    50  aload_3 [af]
+    51  invokevirtual override.AirForce.bombing() : void [44]
+    54  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 10, line: 7]
+        [pc: 20, line: 8]
+        [pc: 30, line: 10]
+        [pc: 34, line: 11]
+        [pc: 38, line: 13]
+        [pc: 42, line: 14]
+        [pc: 46, line: 16]
+        [pc: 50, line: 17]
+        [pc: 54, line: 18]
+      Local variable table:
+        [pc: 0, pc: 55] local: args index: 0 type: java.lang.String[]
+        [pc: 10, pc: 55] local: am index: 1 type: override.Army
+        [pc: 20, pc: 55] local: nv index: 2 type: override.Navy
+        [pc: 30, pc: 55] local: af index: 3 type: override.AirForce
+}
