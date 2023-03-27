@@ -1,0 +1,70 @@
+// Compiled from Article.java (version 11 : 55.0, super bit)
+public class Extends.Article {
+  
+  // Field descriptor #6 I
+  private int num;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  private java.lang.String title;
+  
+  // Method descriptor #10 ()V
+  // Stack: 1, Locals: 1
+  public Article();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [12]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.Article
+  
+  // Method descriptor #19 ()I
+  // Stack: 1, Locals: 1
+  public int getNum();
+    0  aload_0 [this]
+    1  getfield Extends.Article.num : int [20]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 8]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.Article
+  
+  // Method descriptor #23 (I)V
+  // Stack: 2, Locals: 2
+  public void setNum(int num);
+    0  aload_0 [this]
+    1  iload_1 [num]
+    2  putfield Extends.Article.num : int [20]
+    5  return
+      Line numbers:
+        [pc: 0, line: 11]
+        [pc: 5, line: 12]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Extends.Article
+        [pc: 0, pc: 6] local: num index: 1 type: int
+  
+  // Method descriptor #25 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getTitle();
+    0  aload_0 [this]
+    1  getfield Extends.Article.title : java.lang.String [26]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 14]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Extends.Article
+  
+  // Method descriptor #29 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setTitle(java.lang.String title);
+    0  aload_0 [this]
+    1  aload_1 [title]
+    2  putfield Extends.Article.title : java.lang.String [26]
+    5  return
+      Line numbers:
+        [pc: 0, line: 17]
+        [pc: 5, line: 18]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: Extends.Article
+        [pc: 0, pc: 6] local: title index: 1 type: java.lang.String
+}
