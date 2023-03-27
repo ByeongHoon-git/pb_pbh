@@ -1,0 +1,213 @@
+// Compiled from Article.java (version 11 : 55.0, super bit)
+public class hiding.Article {
+  
+  // Field descriptor #6 I
+  private int seq;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  private java.lang.String subejct;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  private java.lang.String content;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  private java.lang.String writer;
+  
+  // Field descriptor #6 I
+  private int hit;
+  
+  // Field descriptor #8 Ljava/lang/String;
+  private java.lang.String regDate;
+  
+  // Method descriptor #14 (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+  // Stack: 2, Locals: 7
+  public Article(int seq, java.lang.String subejct, java.lang.String content, java.lang.String writer, int hit, java.lang.String regDate);
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [16]
+     4  aload_0 [this]
+     5  iload_1 [seq]
+     6  putfield hiding.Article.seq : int [19]
+     9  aload_0 [this]
+    10  aload_2 [subejct]
+    11  putfield hiding.Article.subejct : java.lang.String [21]
+    14  aload_0 [this]
+    15  aload_3 [content]
+    16  putfield hiding.Article.content : java.lang.String [23]
+    19  aload_0 [this]
+    20  aload 4 [writer]
+    22  putfield hiding.Article.writer : java.lang.String [25]
+    25  aload_0 [this]
+    26  iload 5 [hit]
+    28  putfield hiding.Article.hit : int [27]
+    31  aload_0 [this]
+    32  aload 6 [regDate]
+    34  putfield hiding.Article.regDate : java.lang.String [29]
+    37  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 4, line: 15]
+        [pc: 9, line: 16]
+        [pc: 14, line: 17]
+        [pc: 19, line: 18]
+        [pc: 25, line: 19]
+        [pc: 31, line: 20]
+        [pc: 37, line: 21]
+      Local variable table:
+        [pc: 0, pc: 38] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 38] local: seq index: 1 type: int
+        [pc: 0, pc: 38] local: subejct index: 2 type: java.lang.String
+        [pc: 0, pc: 38] local: content index: 3 type: java.lang.String
+        [pc: 0, pc: 38] local: writer index: 4 type: java.lang.String
+        [pc: 0, pc: 38] local: hit index: 5 type: int
+        [pc: 0, pc: 38] local: regDate index: 6 type: java.lang.String
+  
+  // Method descriptor #36 ()I
+  // Stack: 1, Locals: 1
+  public int getSeq();
+    0  aload_0 [this]
+    1  getfield hiding.Article.seq : int [19]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 24]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #38 (I)V
+  // Stack: 2, Locals: 2
+  public void setSeq(int seq);
+    0  aload_0 [this]
+    1  iload_1 [seq]
+    2  putfield hiding.Article.seq : int [19]
+    5  return
+      Line numbers:
+        [pc: 0, line: 28]
+        [pc: 5, line: 29]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: seq index: 1 type: int
+  
+  // Method descriptor #40 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getSubejct();
+    0  aload_0 [this]
+    1  getfield hiding.Article.subejct : java.lang.String [21]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 32]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #42 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setSubejct(java.lang.String subejct);
+    0  aload_0 [this]
+    1  aload_1 [subejct]
+    2  putfield hiding.Article.subejct : java.lang.String [21]
+    5  return
+      Line numbers:
+        [pc: 0, line: 36]
+        [pc: 5, line: 37]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: subejct index: 1 type: java.lang.String
+  
+  // Method descriptor #40 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getContent();
+    0  aload_0 [this]
+    1  getfield hiding.Article.content : java.lang.String [23]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 40]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #42 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setContent(java.lang.String content);
+    0  aload_0 [this]
+    1  aload_1 [content]
+    2  putfield hiding.Article.content : java.lang.String [23]
+    5  return
+      Line numbers:
+        [pc: 0, line: 44]
+        [pc: 5, line: 45]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: content index: 1 type: java.lang.String
+  
+  // Method descriptor #40 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getWriter();
+    0  aload_0 [this]
+    1  getfield hiding.Article.writer : java.lang.String [25]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 48]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #42 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setWriter(java.lang.String writer);
+    0  aload_0 [this]
+    1  aload_1 [writer]
+    2  putfield hiding.Article.writer : java.lang.String [25]
+    5  return
+      Line numbers:
+        [pc: 0, line: 52]
+        [pc: 5, line: 53]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: writer index: 1 type: java.lang.String
+  
+  // Method descriptor #36 ()I
+  // Stack: 1, Locals: 1
+  public int getHit();
+    0  aload_0 [this]
+    1  getfield hiding.Article.hit : int [27]
+    4  ireturn
+      Line numbers:
+        [pc: 0, line: 56]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #38 (I)V
+  // Stack: 2, Locals: 2
+  public void setHit(int hit);
+    0  aload_0 [this]
+    1  iload_1 [hit]
+    2  putfield hiding.Article.hit : int [27]
+    5  return
+      Line numbers:
+        [pc: 0, line: 60]
+        [pc: 5, line: 61]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: hit index: 1 type: int
+  
+  // Method descriptor #40 ()Ljava/lang/String;
+  // Stack: 1, Locals: 1
+  public java.lang.String getRegDate();
+    0  aload_0 [this]
+    1  getfield hiding.Article.regDate : java.lang.String [29]
+    4  areturn
+      Line numbers:
+        [pc: 0, line: 64]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Article
+  
+  // Method descriptor #42 (Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public void setRegDate(java.lang.String regDate);
+    0  aload_0 [this]
+    1  aload_1 [regDate]
+    2  putfield hiding.Article.regDate : java.lang.String [29]
+    5  return
+      Line numbers:
+        [pc: 0, line: 68]
+        [pc: 5, line: 69]
+      Local variable table:
+        [pc: 0, pc: 6] local: this index: 0 type: hiding.Article
+        [pc: 0, pc: 6] local: regDate index: 1 type: java.lang.String
+}
