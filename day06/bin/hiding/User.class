@@ -1,0 +1,29 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+class hiding.User {
+  
+  // Field descriptor #6 Ljava/lang/String;
+  public java.lang.String name;
+  
+  // Field descriptor #8 I
+  private int weight;
+  
+  // Method descriptor #10 ()V
+  // Stack: 2, Locals: 1
+  User();
+     0  aload_0 [this]
+     1  invokespecial java.lang.Object() [12]
+     4  aload_0 [this]
+     5  ldc <String "자바학생"> [14]
+     7  putfield hiding.User.name : java.lang.String [16]
+    10  aload_0 [this]
+    11  bipush 100
+    13  putfield hiding.User.weight : int [18]
+    16  return
+      Line numbers:
+        [pc: 0, line: 3]
+        [pc: 4, line: 4]
+        [pc: 10, line: 5]
+        [pc: 16, line: 3]
+      Local variable table:
+        [pc: 0, pc: 17] local: this index: 0 type: hiding.User
+}
