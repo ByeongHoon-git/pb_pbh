@@ -1,0 +1,34 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class hiding.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 8]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: hiding.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  new hiding.User [16]
+     3  dup
+     4  invokespecial hiding.User() [18]
+     7  astore_1 [user]
+     8  getstatic java.lang.System.out : java.io.PrintStream [19]
+    11  aload_1 [user]
+    12  getfield hiding.User.name : java.lang.String [25]
+    15  invokevirtual java.io.PrintStream.println(java.lang.String) : void [29]
+    18  return
+      Line numbers:
+        [pc: 0, line: 11]
+        [pc: 8, line: 14]
+        [pc: 18, line: 18]
+      Local variable table:
+        [pc: 0, pc: 19] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 19] local: user index: 1 type: hiding.User
+}
