@@ -1,0 +1,295 @@
+// Compiled from Main08.java (version 11 : 55.0, super bit)
+public class codition.Main08 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main08();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: codition.Main08
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 12
+  public static void main(java.lang.String[] args);
+      0  sipush 300
+      3  istore_1 [mymony]
+      4  iload_1 [mymony]
+      5  sipush 3000
+      8  if_icmplt 22
+     11  getstatic java.lang.System.out : java.io.PrintStream [16]
+     14  ldc <String "택시타고 가라"> [22]
+     16  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     19  goto 30
+     22  getstatic java.lang.System.out : java.io.PrintStream [16]
+     25  ldc <String "걸어가라"> [30]
+     27  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     30  getstatic java.lang.System.out : java.io.PrintStream [16]
+     33  ldc <String "--------------------------------"> [32]
+     35  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     38  sipush 1000
+     41  istore_2 [mony]
+     42  iconst_0
+     43  istore_3 [hasCard]
+     44  iload_2 [mony]
+     45  sipush 3000
+     48  if_icmpge 55
+     51  iload_3 [hasCard]
+     52  ifeq 66
+     55  getstatic java.lang.System.out : java.io.PrintStream [16]
+     58  ldc <String "택시타고 가라"> [22]
+     60  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     63  goto 74
+     66  getstatic java.lang.System.out : java.io.PrintStream [16]
+     69  ldc <String "걸어가라"> [30]
+     71  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     74  getstatic java.lang.System.out : java.io.PrintStream [16]
+     77  ldc <String "--------------------------------"> [32]
+     79  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     82  bipush 50
+     84  istore 4 [num3]
+     86  iload 4 [num3]
+     88  iconst_2
+     89  irem
+     90  ifne 104
+     93  getstatic java.lang.System.out : java.io.PrintStream [16]
+     96  ldc <String "짝수입니다"> [34]
+     98  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    101  goto 112
+    104  getstatic java.lang.System.out : java.io.PrintStream [16]
+    107  ldc <String "홀수입니다"> [36]
+    109  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    112  getstatic java.lang.System.out : java.io.PrintStream [16]
+    115  ldc <String "--------------------------------"> [32]
+    117  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    120  bipush 120
+    122  istore 5 [a1]
+    124  bipush 50
+    126  istore 6 [b1]
+    128  bipush 45
+    130  istore 7 [c1]
+    132  iconst_0
+    133  istore 8 [max]
+    135  iload 5 [a1]
+    137  iload 6 [b1]
+    139  if_icmple 156
+    142  iload 5 [a1]
+    144  iload 7 [c1]
+    146  if_icmple 156
+    149  iload 5 [a1]
+    151  istore 8 [max]
+    153  goto 174
+    156  iload 6 [b1]
+    158  iload 7 [c1]
+    160  if_icmple 170
+    163  iload 6 [b1]
+    165  istore 8 [max]
+    167  goto 174
+    170  iload 7 [c1]
+    172  istore 8 [max]
+    174  getstatic java.lang.System.out : java.io.PrintStream [16]
+    177  new java.lang.StringBuilder [38]
+    180  dup
+    181  ldc <String "최댓값 : "> [40]
+    183  invokespecial java.lang.StringBuilder(java.lang.String) [42]
+    186  iload 8 [max]
+    188  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [44]
+    191  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [48]
+    194  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    197  getstatic java.lang.System.out : java.io.PrintStream [16]
+    200  ldc <String "--------------------------------"> [32]
+    202  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    205  bipush 70
+    207  istore 9 [mat]
+    209  iload 9 [mat]
+    211  bipush 90
+    213  if_icmplt 227
+    216  getstatic java.lang.System.out : java.io.PrintStream [16]
+    219  ldc <String "A학점"> [52]
+    221  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    224  goto 289
+    227  iload 9 [mat]
+    229  bipush 80
+    231  if_icmplt 245
+    234  getstatic java.lang.System.out : java.io.PrintStream [16]
+    237  ldc <String "B학점"> [54]
+    239  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    242  goto 289
+    245  iload 9 [mat]
+    247  bipush 70
+    249  if_icmplt 263
+    252  getstatic java.lang.System.out : java.io.PrintStream [16]
+    255  ldc <String "C학점"> [56]
+    257  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    260  goto 289
+    263  iload 9 [mat]
+    265  bipush 60
+    267  if_icmplt 281
+    270  getstatic java.lang.System.out : java.io.PrintStream [16]
+    273  ldc <String "D학점"> [58]
+    275  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    278  goto 289
+    281  getstatic java.lang.System.out : java.io.PrintStream [16]
+    284  ldc <String "F학점"> [60]
+    286  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    289  getstatic java.lang.System.out : java.io.PrintStream [16]
+    292  ldc <String "--------------------------------"> [32]
+    294  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    297  bipush 52
+    299  istore 10 [num]
+    301  iload 10 [num]
+    303  tableswitch default: 376
+          case 1: 332
+          case 2: 343
+          case 3: 354
+          case 4: 365
+    332  getstatic java.lang.System.out : java.io.PrintStream [16]
+    335  ldc <String "축구"> [62]
+    337  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    340  goto 384
+    343  getstatic java.lang.System.out : java.io.PrintStream [16]
+    346  ldc <String "농구"> [64]
+    348  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    351  goto 384
+    354  getstatic java.lang.System.out : java.io.PrintStream [16]
+    357  ldc <String "야구"> [66]
+    359  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    362  goto 384
+    365  getstatic java.lang.System.out : java.io.PrintStream [16]
+    368  ldc <String "배구"> [68]
+    370  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    373  goto 384
+    376  getstatic java.lang.System.out : java.io.PrintStream [16]
+    379  ldc <String "배드민턴"> [70]
+    381  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    384  getstatic java.lang.System.out : java.io.PrintStream [16]
+    387  ldc <String "--------------------------------"> [32]
+    389  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    392  iconst_3
+    393  istore 11 [num1]
+    395  iload 11 [num1]
+    397  tableswitch default: 451
+          case 1: 440
+          case 2: 432
+          case 3: 424
+    424  getstatic java.lang.System.out : java.io.PrintStream [16]
+    427  ldc <String "안녕"> [72]
+    429  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    432  getstatic java.lang.System.out : java.io.PrintStream [16]
+    435  ldc <String "안녕"> [72]
+    437  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    440  getstatic java.lang.System.out : java.io.PrintStream [16]
+    443  ldc <String "안녕"> [72]
+    445  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    448  goto 459
+    451  getstatic java.lang.System.out : java.io.PrintStream [16]
+    454  ldc <String "잘가"> [74]
+    456  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    459  return
+      Line numbers:
+        [pc: 0, line: 12]
+        [pc: 4, line: 14]
+        [pc: 11, line: 15]
+        [pc: 19, line: 16]
+        [pc: 22, line: 17]
+        [pc: 30, line: 20]
+        [pc: 38, line: 29]
+        [pc: 42, line: 30]
+        [pc: 44, line: 32]
+        [pc: 55, line: 33]
+        [pc: 63, line: 34]
+        [pc: 66, line: 35]
+        [pc: 74, line: 39]
+        [pc: 82, line: 47]
+        [pc: 86, line: 49]
+        [pc: 93, line: 50]
+        [pc: 101, line: 51]
+        [pc: 104, line: 52]
+        [pc: 112, line: 55]
+        [pc: 120, line: 63]
+        [pc: 132, line: 64]
+        [pc: 135, line: 67]
+        [pc: 149, line: 68]
+        [pc: 153, line: 69]
+        [pc: 156, line: 70]
+        [pc: 163, line: 71]
+        [pc: 167, line: 72]
+        [pc: 170, line: 73]
+        [pc: 174, line: 77]
+        [pc: 197, line: 79]
+        [pc: 205, line: 90]
+        [pc: 209, line: 92]
+        [pc: 216, line: 93]
+        [pc: 224, line: 94]
+        [pc: 234, line: 95]
+        [pc: 242, line: 96]
+        [pc: 252, line: 97]
+        [pc: 260, line: 98]
+        [pc: 270, line: 99]
+        [pc: 278, line: 100]
+        [pc: 281, line: 101]
+        [pc: 289, line: 104]
+        [pc: 297, line: 112]
+        [pc: 301, line: 114]
+        [pc: 332, line: 116]
+        [pc: 340, line: 117]
+        [pc: 343, line: 119]
+        [pc: 351, line: 120]
+        [pc: 354, line: 122]
+        [pc: 362, line: 123]
+        [pc: 365, line: 125]
+        [pc: 373, line: 126]
+        [pc: 376, line: 128]
+        [pc: 384, line: 133]
+        [pc: 392, line: 141]
+        [pc: 395, line: 143]
+        [pc: 424, line: 145]
+        [pc: 432, line: 147]
+        [pc: 440, line: 149]
+        [pc: 448, line: 150]
+        [pc: 451, line: 152]
+        [pc: 459, line: 173]
+      Local variable table:
+        [pc: 0, pc: 460] local: args index: 0 type: java.lang.String[]
+        [pc: 4, pc: 460] local: mymony index: 1 type: int
+        [pc: 42, pc: 460] local: mony index: 2 type: int
+        [pc: 44, pc: 460] local: hasCard index: 3 type: boolean
+        [pc: 86, pc: 460] local: num3 index: 4 type: int
+        [pc: 124, pc: 460] local: a1 index: 5 type: int
+        [pc: 128, pc: 460] local: b1 index: 6 type: int
+        [pc: 132, pc: 460] local: c1 index: 7 type: int
+        [pc: 135, pc: 460] local: max index: 8 type: int
+        [pc: 209, pc: 460] local: mat index: 9 type: int
+        [pc: 301, pc: 460] local: num index: 10 type: int
+        [pc: 395, pc: 460] local: num1 index: 11 type: int
+      Stack map table: number of frames 26
+        [pc: 22, append: {int}]
+        [pc: 30, same]
+        [pc: 55, append: {int, int}]
+        [pc: 66, same]
+        [pc: 74, same]
+        [pc: 104, append: {int}]
+        [pc: 112, same]
+        [pc: 156, full, stack: {}, locals: {java.lang.String[], int, int, int, int, int, int, int, int}]
+        [pc: 170, same]
+        [pc: 174, same]
+        [pc: 227, append: {int}]
+        [pc: 245, same]
+        [pc: 263, same]
+        [pc: 281, same]
+        [pc: 289, same]
+        [pc: 332, append: {int}]
+        [pc: 343, same]
+        [pc: 354, same]
+        [pc: 365, same]
+        [pc: 376, same]
+        [pc: 384, same]
+        [pc: 424, append: {int}]
+        [pc: 432, same]
+        [pc: 440, same]
+        [pc: 451, same]
+        [pc: 459, same]
+}
