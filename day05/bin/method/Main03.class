@@ -1,0 +1,85 @@
+// Compiled from Main03.java (version 11 : 55.0, super bit)
+public class method.Main03 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main03();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: method.Main03
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 3, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  bipush 10
+     2  bipush 15
+     4  invokestatic method.Main03.plus(int, int) : int [16]
+     7  istore_1 [result]
+     8  getstatic java.lang.System.out : java.io.PrintStream [20]
+    11  iload_1 [result]
+    12  invokevirtual java.io.PrintStream.println(int) : void [26]
+    15  getstatic java.lang.System.out : java.io.PrintStream [20]
+    18  bipush 10
+    20  bipush 15
+    22  invokestatic method.Main03.plus(int, int) : int [16]
+    25  invokevirtual java.io.PrintStream.println(int) : void [26]
+    28  bipush 8
+    30  bipush 15
+    32  invokestatic method.Main03.minus(int, int) : int [32]
+    35  istore_2 [result2]
+    36  getstatic java.lang.System.out : java.io.PrintStream [20]
+    39  iload_2 [result2]
+    40  invokevirtual java.io.PrintStream.println(int) : void [26]
+    43  getstatic java.lang.System.out : java.io.PrintStream [20]
+    46  bipush 8
+    48  bipush 15
+    50  invokestatic method.Main03.minus(int, int) : int [32]
+    53  invokevirtual java.io.PrintStream.println(int) : void [26]
+    56  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 8, line: 7]
+        [pc: 15, line: 8]
+        [pc: 28, line: 10]
+        [pc: 36, line: 11]
+        [pc: 43, line: 12]
+        [pc: 56, line: 13]
+      Local variable table:
+        [pc: 0, pc: 57] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 57] local: result index: 1 type: int
+        [pc: 36, pc: 57] local: result2 index: 2 type: int
+  
+  // Method descriptor #19 (II)I
+  // Stack: 2, Locals: 3
+  public static int plus(int x, int y);
+    0  iload_0 [x]
+    1  iload_1 [y]
+    2  iadd
+    3  istore_2 [z]
+    4  iload_2 [z]
+    5  ireturn
+      Line numbers:
+        [pc: 0, line: 16]
+        [pc: 4, line: 17]
+      Local variable table:
+        [pc: 0, pc: 6] local: x index: 0 type: int
+        [pc: 0, pc: 6] local: y index: 1 type: int
+        [pc: 4, pc: 6] local: z index: 2 type: int
+  
+  // Method descriptor #19 (II)I
+  // Stack: 2, Locals: 2
+  public static int minus(int x, int y);
+    0  iload_0 [x]
+    1  iload_1 [y]
+    2  isub
+    3  ireturn
+      Line numbers:
+        [pc: 0, line: 24]
+      Local variable table:
+        [pc: 0, pc: 4] local: x index: 0 type: int
+        [pc: 0, pc: 4] local: y index: 1 type: int
+}
