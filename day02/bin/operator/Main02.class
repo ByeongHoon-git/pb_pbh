@@ -1,0 +1,100 @@
+// Compiled from Main02.java (version 11 : 55.0, super bit)
+public class operator.Main02 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main02();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: operator.Main02
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 4, Locals: 2
+  public static void main(java.lang.String[] args);
+      0  bipush 100
+      2  istore_1 [source]
+      3  getstatic java.lang.System.out : java.io.PrintStream [16]
+      6  ldc <String "int source = 100  "> [22]
+      8  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     11  iinc 1 100 [source]
+     14  getstatic java.lang.System.out : java.io.PrintStream [16]
+     17  new java.lang.StringBuilder [30]
+     20  dup
+     21  ldc <String "source += 100     "> [32]
+     23  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     26  iload_1 [source]
+     27  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     30  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     33  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     36  iinc 1 -50 [source]
+     39  getstatic java.lang.System.out : java.io.PrintStream [16]
+     42  new java.lang.StringBuilder [30]
+     45  dup
+     46  ldc <String "source -= 50      "> [44]
+     48  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     51  iload_1 [source]
+     52  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     55  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     58  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     61  iload_1 [source]
+     62  iconst_2
+     63  imul
+     64  istore_1 [source]
+     65  getstatic java.lang.System.out : java.io.PrintStream [16]
+     68  new java.lang.StringBuilder [30]
+     71  dup
+     72  ldc <String "source *= 2       "> [46]
+     74  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+     77  iload_1 [source]
+     78  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+     81  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+     84  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+     87  iload_1 [source]
+     88  bipush 100
+     90  idiv
+     91  istore_1 [source]
+     92  getstatic java.lang.System.out : java.io.PrintStream [16]
+     95  new java.lang.StringBuilder [30]
+     98  dup
+     99  ldc <String "source /= 100     "> [48]
+    101  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+    104  iload_1 [source]
+    105  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    108  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    111  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    114  iload_1 [source]
+    115  iconst_2
+    116  irem
+    117  istore_1 [source]
+    118  getstatic java.lang.System.out : java.io.PrintStream [16]
+    121  new java.lang.StringBuilder [30]
+    124  dup
+    125  ldc <String "source %= 2       "> [50]
+    127  invokespecial java.lang.StringBuilder(java.lang.String) [34]
+    130  iload_1 [source]
+    131  invokevirtual java.lang.StringBuilder.append(int) : java.lang.StringBuilder [36]
+    134  invokevirtual java.lang.StringBuilder.toString() : java.lang.String [40]
+    137  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    140  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 8]
+        [pc: 11, line: 9]
+        [pc: 14, line: 10]
+        [pc: 36, line: 12]
+        [pc: 39, line: 13]
+        [pc: 61, line: 15]
+        [pc: 65, line: 16]
+        [pc: 87, line: 18]
+        [pc: 92, line: 19]
+        [pc: 114, line: 21]
+        [pc: 118, line: 22]
+        [pc: 140, line: 24]
+      Local variable table:
+        [pc: 0, pc: 141] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 141] local: source index: 1 type: int
+}
