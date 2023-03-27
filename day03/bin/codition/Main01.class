@@ -1,0 +1,64 @@
+// Compiled from Main01.java (version 11 : 55.0, super bit)
+public class codition.Main01 {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Main01();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 3]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: codition.Main01
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 2, Locals: 2
+  public static void main(java.lang.String[] args);
+     0  bipush 19
+     2  istore_1 [myage]
+     3  iload_1 [myage]
+     4  bipush 19
+     6  if_icmpne 17
+     9  getstatic java.lang.System.out : java.io.PrintStream [16]
+    12  ldc <String "19살 입니다."> [22]
+    14  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    17  iload_1 [myage]
+    18  bipush 20
+    20  if_icmpeq 31
+    23  getstatic java.lang.System.out : java.io.PrintStream [16]
+    26  ldc <String "20살이 아닙니다."> [30]
+    28  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    31  iload_1 [myage]
+    32  bipush 19
+    34  if_icmple 45
+    37  getstatic java.lang.System.out : java.io.PrintStream [16]
+    40  ldc <String "성인입니다."> [32]
+    42  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    45  iload_1 [myage]
+    46  bipush 19
+    48  if_icmpgt 59
+    51  getstatic java.lang.System.out : java.io.PrintStream [16]
+    54  ldc <String "학생입니다."> [34]
+    56  invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+    59  return
+      Line numbers:
+        [pc: 0, line: 6]
+        [pc: 3, line: 8]
+        [pc: 9, line: 9]
+        [pc: 17, line: 12]
+        [pc: 23, line: 13]
+        [pc: 31, line: 16]
+        [pc: 37, line: 17]
+        [pc: 45, line: 20]
+        [pc: 51, line: 21]
+        [pc: 59, line: 29]
+      Local variable table:
+        [pc: 0, pc: 60] local: args index: 0 type: java.lang.String[]
+        [pc: 3, pc: 60] local: myage index: 1 type: int
+      Stack map table: number of frames 4
+        [pc: 17, append: {int}]
+        [pc: 31, same]
+        [pc: 45, same]
+        [pc: 59, same]
+}
